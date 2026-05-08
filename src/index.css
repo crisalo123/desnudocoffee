@@ -1,0 +1,43 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-family-display: 'Playfair Display', Georgia, serif;
+  --font-family-sans: 'DM Sans', system-ui, sans-serif;
+
+  --color-denuded-parchment: #f4eee6;
+  --color-denuded-gold: #c9a962;
+  --color-denuded-copper: #b87333;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply antialiased text-stone-200 bg-[#0a0807];
+    font-family: var(--font-family-sans);
+  }
+}
+
+@layer utilities {
+  .animate-ambience-drift {
+    animation: ambience-drift ease-in-out infinite;
+  }
+}
+
+@keyframes ambience-drift {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(22px, -26px) rotate(4deg);
+  }
+  50% {
+    transform: translate(-16px, 18px) rotate(-3deg);
+  }
+  75% {
+    transform: translate(14px, 22px) rotate(2.5deg);
+  }
+}

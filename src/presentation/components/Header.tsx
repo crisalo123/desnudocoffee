@@ -1,0 +1,87 @@
+
+import { setLocale, type AppLocale } from '@/infrastructure/i18n/i18n.config'
+import { useTranslation } from 'react-i18next'
+import { useCart } from '@/presentation/hooks/useCart'
+
+interface HeaderProps {
+  onOpenCart: () => void
+}
+
+export function Header({ onOpenCart }: HeaderProps) {
+  const { t, i18n } = useTranslation()
+  const { totalItems } = useCart()
+
+  const locale = (i18n.language.startsWith('es') ? 'es' : 'en') as AppLocale
+
+  return (
+    <header className="sticky top-0 z-40 border-b border-white/10 bg-[#0a0807]/80 backdrop-blur-xl">
+      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4 sm:px-6">
+        <a href="#" className="group flex items-center gap-3 text-left sm:gap-4">
+          
+          <div className="flex min-w-0 flex-col border-l border-white/10 pl-3 sm:pl-4">
+            <span className="font-display text-lg tracking-tight text-denuded-parchment transition group-hover:text-denuded-gold sm:text-xl">
+              {t('brand')}
+            </span>
+            <span className="max-w-[11rem] truncate text-[11px] text-stone-500 sm:max-w-[18rem] sm:text-xs">
+              {t('tagline')}
+            </span>
+          </div>
+        </a>
+
+        <div className="flex items-center gap-2 sm:gap-3">
+          <div className="flex rounded-full border border-white/15 bg-white/5 p-0.5">
+            <button
+              type="button"
+              onClick={() => setLocale('en')}
+              className={`rounded-full px-2.5 py-1 text-xs font-medium transition sm:px-3 sm:text-sm ${
+                locale === 'en'
+                  ? 'bg-white/15 text-denuded-parchment'
+                  : 'text-stone-500 hover:text-stone-300'
+              }`}
+            >
+              EN
+            </button>
+            <button
+              type="button"
+              onClick={() => setLocale('es')}
+              className={`rounded-full px-2.5 py-1 text-xs font-medium transition sm:px-3 sm:text-sm ${
+                locale === 'es'
+                  ? 'bg-white/15 text-denuded-parchment'
+                  : 'text-stone-500 hover:text-stone-300'
+              }`}
+            >
+              ES
+            </button>
+          </div>
+
+          <button
+            type="button"
+            onClick={onOpenCart}
+            className="relative flex items-center gap-2 rounded-full border border-denuded-gold/40 bg-gradient-to-r from-denuded-gold/20 to-amber-900/30 px-3 py-2 text-sm font-medium text-denuded-parchment shadow-lg shadow-black/30 transition hover:border-denuded-gold/70 hover:from-denuded-gold/30 sm:px-4"
+            aria-label={t('nav.cart')}
+          >
+            <svg
+              className="h-5 w-5 shrink-0 opacity-90"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.8"
+              aria-hidden
+            >
+              <path d="M6 6h15l-1.5 9h-12z" strokeLinejoin="round" />
+              <path d="M6 6 5 3H2" strokeLinecap="round" />
+              <circle cx="9" cy="20" r="1.4" fill="currentColor" stroke="none" />
+              <circle cx="17" cy="20" r="1.4" fill="currentColor" stroke="none" />
+            </svg>
+            <span className="hidden sm:inline">{t('nav.cart')}</span>
+            {totalItems > 0 ? (
+              <span className="absolute -right-1 -top-1 flex h-5 min-w-5 items-center justify-center rounded-full bg-denuded-gold px-1 text-[10px] font-bold text-stone-950">
+                {totalItems > 99 ? '99+' : totalItems}
+              </span>
+            ) : null}
+          </button>
+        </div>
+      </div>
+    </header>
+  )
+}

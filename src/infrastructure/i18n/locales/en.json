@@ -1,0 +1,132 @@
+{
+  "brand": "Desnudo Coffee",
+  "tagline": "Change is possible, one farm at a time.",
+  "nav": {
+    "explore": "Explore",
+    "contact": "Order on WhatsApp",
+    "cart": "Cart",
+    "cart_empty": "Your selection is empty"
+  },
+  "hero": {
+    "eyebrow": "Austin · Direct trade · Micro lots",
+    "title": "Coffee with purpose, roasted with care.",
+    "subtitle": "A simplified showcase of our essential microlots, memberships, and goods. When you're ready, we take your order on WhatsApp.",
+    "cta_catalog": "See offerings",
+    "cta_whatsapp": "Chat with us",
+    "photo_credit": "Photography from Desnudo Coffee — Austin"
+  },
+  "trust": {
+    "direct": "Direct relationships with producers",
+    "fresh": "Fresh weekly rotation",
+    "craft": "Small-batch roasting"
+  },
+  "sections": {
+    "coffee": "Coffees & microlots",
+    "membership": "Memberships",
+    "chocolate": "Chocolate",
+    "merch": "Merch & accessories"
+  },
+  "product": {
+    "add": "Add",
+    "featured": "Featured"
+  },
+  "price": {
+    "per_bag": "/ bag",
+    "from": "From",
+    "approx_hint": "Indicative price from desnudocoffee.com — confirm when you order."
+  },
+  "cart": {
+    "title": "Your selection",
+    "subtitle": "No checkout here — we finalize everything on WhatsApp.",
+    "empty": "Tap “Add” on any item to build an inquiry.",
+    "quantity": "Qty",
+    "remove": "Remove",
+    "clear": "Clear all",
+    "send": "Send order via WhatsApp",
+    "configure_phone": "Set VITE_WHATSAPP_PHONE in your environment to enable WhatsApp links.",
+    "badge": "items"
+  },
+  "whatsapp": {
+    "intro": "Hello Desnudo Coffee — I'd like to inquire about:",
+    "outro": "Thank you!"
+  },
+  "footer": {
+    "rights": "© {{year}} Desnudo Coffee. Inspired by desnudocoffee.com — independent showcase.",
+    "locations_title": "Visit us in Austin",
+    "instagram": "Instagram"
+  },
+  "locations": {
+    "east": "2505 Webberville Rd — Weekdays 7–2 · Weekends 7:30–2:30",
+    "downtown": "111 Congress Ave — Mon–Fri 7:30–2 · Weekends 8–2:30",
+    "lamar": "1904 S Lamar — Daily 7:30–2",
+    "west": "1214 W 6th St — Daily 8–2"
+  },
+  "products": {
+    "coffee_community_lot": {
+      "name": "Community Lot | Washed | dark chocolate, toffee and thyme"
+    },
+    "coffee_colombia_miel": {
+      "name": "Colombia Miel | Yellow Honey"
+    },
+    "coffee_gesha_washed": {
+      "name": "Gesha | Washed"
+    },
+    "coffee_java_honey": {
+      "name": "Java | Honey"
+    },
+    "coffee_java_wild_natural": {
+      "name": "Java | Wild Natural"
+    },
+    "coffee_caramel_apple_java": {
+      "name": "Caramel Apple Java"
+    },
+    "coffee_caturra_esperanza": {
+      "name": "Caturra Esperanza"
+    },
+    "coffee_bourbon_rosado": {
+      "name": "Bourbon Rosado"
+    },
+    "coffee_ethiopian_washed": {
+      "name": "Ethiopian Washed"
+    },
+    "coffee_suenios_decaf": {
+      "name": "Desnudo Sueños DECAF"
+    },
+    "coffee_high_tea_gesha": {
+      "name": "High Tea Gesha"
+    },
+    "coffee_big_bag": {
+      "name": "The Desnudo Big Bag (5 lb)"
+    },
+    "membership_bronze": {
+      "name": "Bronze Membership"
+    },
+    "membership_silver": {
+      "name": "Silver Membership"
+    },
+    "membership_prepaid_year": {
+      "name": "Prepaid 1 Year Gift Membership"
+    },
+    "membership_weekly_sub": {
+      "name": "Weekly subscription — freshly roasted coffee"
+    },
+    "chocolate_70_dark": {
+      "name": "Desnudo Chocolate Bar · 70% Dark"
+    },
+    "chocolate_50_milk": {
+      "name": "Desnudo Chocolate Bar · 50% Milk"
+    },
+    "merch_hat": {
+      "name": "Desnudo Hats"
+    },
+    "merch_tote": {
+      "name": "Desnudo Tote Bag"
+    },
+    "merch_tshirt": {
+      "name": "Desnudo T-Shirt"
+    },
+    "merch_egift": {
+      "name": "Desnudo E-Gift Card"
+    }
+  }
+}
