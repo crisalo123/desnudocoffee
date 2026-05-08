@@ -1,5 +1,7 @@
-import { useScrollParallax } from '@/presentation/hooks/useScrollParallax'
+import { useMemo } from 'react'
+import { useMobileAmbienceLite } from '@/presentation/hooks/useMobileAmbienceLite'
 import { usePrefersReducedMotion } from '@/presentation/hooks/usePrefersReducedMotion'
+import { useScrollParallax } from '@/presentation/hooks/useScrollParallax'
 
 interface DecoItem {
   readonly kind: 'bean' | 'leaf'
@@ -22,7 +24,7 @@ const DECO: readonly DecoItem[] = [
     size: 72,
     parallax: 0.14,
     rotate: -18,
-    opacity: 0.14,
+    opacity: 0.34,
     delay: '0s',
     duration: '14s',
   },
@@ -171,6 +173,14 @@ const DECO: readonly DecoItem[] = [
   },
 ]
 
+/** En móvil quitamos solo unas pocas piezas (14 → 10), repartidas en la lista */
+const MOBILE_DECO_SKIP = new Set<number>([4, 7, 10, 12])
+
+function decoForViewport(mobileLite: boolean): readonly DecoItem[] {
+  if (!mobileLite) return DECO
+  return DECO.filter((_, i) => !MOBILE_DECO_SKIP.has(i))
+}
+
 function BeanGlyph({ size }: { size: number }) {
   return (
     <svg
@@ -231,17 +241,24 @@ function LeafGlyph({ size }: { size: number }) {
 export function ScrollAmbience() {
   const scrollY = useScrollParallax()
   const reducedMotion = usePrefersReducedMotion()
+  const mobileLite = useMobileAmbienceLite()
+
+  const decoVisible = useMemo(
+    () => decoForViewport(mobileLite),
+    [mobileLite],
+  )
 
   if (reducedMotion) {
+    const reducedList = decoVisible.slice(0, mobileLite ? 6 : 8)
     return (
       <div
         className="pointer-events-none fixed inset-0 z-0 overflow-hidden"
         aria-hidden
       >
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_90%_55%_at_50%_0%,rgba(201,169,98,0.12),transparent_65%),radial-gradient(ellipse_70%_45%_at_80%_90%,rgba(52,211,153,0.06),transparent)]" />
-        {DECO.slice(0, 8).map((item, i) => (
+        {reducedList.map((item) => (
           <span
-            key={i}
+            key={`${item.left}-${item.top}-${item.kind}`}
             className="absolute"
             style={{
               left: item.left,
@@ -267,11 +284,11 @@ export function ScrollAmbience() {
       aria-hidden
     >
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_90%_55%_at_50%_-5%,rgba(201,169,98,0.16),transparent_60%),radial-gradient(ellipse_75%_50%_at_100%_80%,rgba(180,83,9,0.1),transparent),radial-gradient(ellipse_60%_40%_at_0%_70%,rgba(16,185,129,0.08),transparent)]" />
-      {DECO.map((item, i) => {
+      {decoVisible.map((item) => {
         const py = scrollY * item.parallax
         return (
           <span
-            key={i}
+            key={`${item.left}-${item.top}-${item.kind}`}
             className="absolute will-change-transform"
             style={{
               left: item.left,
