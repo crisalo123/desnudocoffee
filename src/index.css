@@ -24,6 +24,30 @@
   .animate-ambience-drift {
     animation: ambience-drift ease-in-out infinite;
   }
+
+  .animate-product-shimmer {
+    animation: product-shimmer 2.6s ease-in-out infinite;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .animate-product-shimmer {
+      animation: none;
+    }
+  }
+}
+
+@keyframes product-shimmer {
+  0% {
+    transform: translateX(-120%) skewX(-14deg);
+    opacity: 0;
+  }
+  35% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateX(220%) skewX(-14deg);
+    opacity: 0;
+  }
 }
 
 @keyframes ambience-drift {

@@ -1,6 +1,6 @@
 import type { Product } from '@/domain/product.types'
 import { getProductImageUrl } from '@/data/product-media'
-import { useState } from 'react'
+import { useId, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useCart } from '@/presentation/hooks/useCart'
 import { useProductPriceLabel } from '@/presentation/hooks/useProductPriceLabel'
@@ -12,7 +12,8 @@ interface ProductCardProps {
 export function ProductCard({ product }: ProductCardProps) {
   const { t } = useTranslation()
   const { addProduct, lines } = useCart()
-  const [summaryOpen, setSummaryOpen] = useState(false)
+  const [detailsOpen, setDetailsOpen] = useState(false)
+  const panelId = useId()
 
   const line = lines.find((l) => l.productId === product.id)
   const qty = line?.quantity ?? 0
@@ -65,21 +66,56 @@ export function ProductCard({ product }: ProductCardProps) {
         ) : null}
 
         {hasSummary ? (
-          <div className="mt-3 border-t border-white/5 pt-3">
-            <p
-              className={`text-sm leading-relaxed text-stone-400 transition-[max-height] duration-300 ${
-                summaryOpen ? '' : 'line-clamp-3'
-              }`}
-            >
-              {summary}
-            </p>
+          <div className="mt-4">
             <button
               type="button"
-              onClick={() => setSummaryOpen((o) => !o)}
-              className="mt-2 text-left text-xs font-semibold uppercase tracking-wide text-denuded-gold/90 underline-offset-2 hover:text-denuded-gold hover:underline"
+              id={`${panelId}-trigger`}
+              aria-expanded={detailsOpen}
+              aria-controls={panelId}
+              onClick={() => setDetailsOpen((o) => !o)}
+              className="group/btn relative flex w-full items-center justify-center gap-2 overflow-hidden rounded-xl border border-denuded-gold/30 bg-gradient-to-r from-white/[0.06] via-amber-950/20 to-white/[0.04] px-3 py-2.5 text-[11px] font-semibold uppercase tracking-[0.14em] text-denuded-parchment shadow-inner shadow-white/5 ring-1 ring-white/5 transition hover:border-denuded-gold/55 hover:from-denuded-gold/10 hover:via-amber-950/30 hover:to-white/[0.06] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-denuded-gold/70"
             >
-              {summaryOpen ? t('product.read_less') : t('product.read_more')}
+              <span
+                className="absolute inset-0 opacity-0 transition group-hover/btn:opacity-100"
+                aria-hidden
+              >
+                <span className="absolute -left-1/4 top-0 h-full w-1/2 skew-x-12 bg-gradient-to-r from-transparent via-denuded-gold/15 to-transparent animate-product-shimmer" />
+              </span>
+              <svg
+                className="relative h-3.5 w-3.5 shrink-0 text-denuded-gold"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden
+              >
+                <path d="M12 3.5c-1.2 2.1-4.5 6.8-4.5 10.2a4.5 4.5 0 109 0c0-3.4-3.3-8.1-4.5-10.2z" />
+              </svg>
+              <span className="relative">
+                {detailsOpen ? t('product.details_hide') : t('product.details_open')}
+              </span>
+              <svg
+                className={`relative h-4 w-4 shrink-0 text-denuded-gold/90 transition-transform duration-300 ease-out ${
+                  detailsOpen ? 'rotate-180' : ''
+                }`}
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                aria-hidden
+              >
+                <path d="M6 9l6 6 6-6" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
             </button>
+
+            <div
+              className="grid transition-[grid-template-rows] duration-300 ease-out motion-reduce:transition-none"
+              style={{ gridTemplateRows: detailsOpen ? '1fr' : '0fr' }}
+            >
+              <div id={panelId} className="min-h-0 overflow-hidden" role="region" aria-labelledby={`${panelId}-trigger`}>
+                <div className="mt-2 rounded-xl border border-white/10 bg-gradient-to-b from-stone-900/90 to-black/40 p-3.5 shadow-inner shadow-black/40 backdrop-blur-sm">
+                  <p className="text-sm leading-relaxed text-stone-300">{summary}</p>
+                </div>
+              </div>
+            </div>
           </div>
         ) : null}
 

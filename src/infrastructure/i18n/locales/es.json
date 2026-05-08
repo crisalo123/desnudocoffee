@@ -29,8 +29,8 @@
   "product": {
     "add": "Añadir",
     "featured": "Destacado",
-    "read_more": "Leer más",
-    "read_less": "Mostrar menos"
+    "details_open": "Sabor en detalle",
+    "details_hide": "Ocultar"
   },
   "price": {
     "per_bag": "/ bolsa",

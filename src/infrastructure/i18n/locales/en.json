@@ -29,8 +29,8 @@
   "product": {
     "add": "Add",
     "featured": "Featured",
-    "read_more": "Read more",
-    "read_less": "Show less"
+    "details_open": "Flavor snapshot",
+    "details_hide": "Hide"
   },
   "price": {
     "per_bag": "/ bag",
