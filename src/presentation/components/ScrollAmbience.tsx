@@ -13,7 +13,7 @@ interface DecoItem {
   readonly duration: string
 }
 
-/** Opacidades y tamaños más altos para que el efecto sea claramente visible */
+/** Un poco más transparente que el baseline: sigue visible pero más sutil */
 const DECO: readonly DecoItem[] = [
   {
     kind: 'leaf',
@@ -22,7 +22,7 @@ const DECO: readonly DecoItem[] = [
     size: 72,
     parallax: 0.14,
     rotate: -18,
-    opacity: 0.38,
+    opacity: 0.14,
     delay: '0s',
     duration: '14s',
   },
@@ -33,7 +33,7 @@ const DECO: readonly DecoItem[] = [
     size: 56,
     parallax: 0.1,
     rotate: 22,
-    opacity: 0.42,
+    opacity: 0.38,
     delay: '-3s',
     duration: '12s',
   },
@@ -44,7 +44,7 @@ const DECO: readonly DecoItem[] = [
     size: 64,
     parallax: 0.18,
     rotate: -8,
-    opacity: 0.36,
+    opacity: 0.32,
     delay: '-1.5s',
     duration: '13s',
   },
@@ -55,7 +55,7 @@ const DECO: readonly DecoItem[] = [
     size: 68,
     parallax: 0.15,
     rotate: 14,
-    opacity: 0.32,
+    opacity: 0.28,
     delay: '-6s',
     duration: '16s',
   },
@@ -66,7 +66,7 @@ const DECO: readonly DecoItem[] = [
     size: 52,
     parallax: 0.11,
     rotate: 35,
-    opacity: 0.4,
+    opacity: 0.36,
     delay: '-5s',
     duration: '11s',
   },
@@ -77,7 +77,7 @@ const DECO: readonly DecoItem[] = [
     size: 60,
     parallax: 0.16,
     rotate: -25,
-    opacity: 0.3,
+    opacity: 0.26,
     delay: '-9s',
     duration: '15s',
   },
@@ -88,7 +88,7 @@ const DECO: readonly DecoItem[] = [
     size: 44,
     parallax: 0.08,
     rotate: -30,
-    opacity: 0.34,
+    opacity: 0.3,
     delay: '-0.5s',
     duration: '10s',
   },
@@ -99,7 +99,7 @@ const DECO: readonly DecoItem[] = [
     size: 78,
     parallax: 0.13,
     rotate: 8,
-    opacity: 0.35,
+    opacity: 0.31,
     delay: '-11s',
     duration: '17s',
   },
@@ -110,7 +110,7 @@ const DECO: readonly DecoItem[] = [
     size: 48,
     parallax: 0.12,
     rotate: 12,
-    opacity: 0.36,
+    opacity: 0.32,
     delay: '-7s',
     duration: '12.5s',
   },
@@ -121,7 +121,7 @@ const DECO: readonly DecoItem[] = [
     size: 54,
     parallax: 0.11,
     rotate: -12,
-    opacity: 0.33,
+    opacity: 0.29,
     delay: '-4s',
     duration: '14s',
   },
@@ -132,7 +132,7 @@ const DECO: readonly DecoItem[] = [
     size: 58,
     parallax: 0.17,
     rotate: -22,
-    opacity: 0.37,
+    opacity: 0.33,
     delay: '-2s',
     duration: '13s',
   },
@@ -143,7 +143,7 @@ const DECO: readonly DecoItem[] = [
     size: 66,
     parallax: 0.14,
     rotate: 20,
-    opacity: 0.34,
+    opacity: 0.3,
     delay: '-8s',
     duration: '15s',
   },
@@ -154,7 +154,7 @@ const DECO: readonly DecoItem[] = [
     size: 50,
     parallax: 0.12,
     rotate: 40,
-    opacity: 0.39,
+    opacity: 0.35,
     delay: '-10s',
     duration: '11s',
   },
@@ -165,7 +165,7 @@ const DECO: readonly DecoItem[] = [
     size: 46,
     parallax: 0.13,
     rotate: -35,
-    opacity: 0.36,
+    opacity: 0.32,
     delay: '-5.5s',
     duration: '14s',
   },
@@ -180,7 +180,7 @@ function BeanGlyph({ size }: { size: number }) {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       aria-hidden
-      className="text-amber-200/95 drop-shadow-[0_0_14px_rgba(251,191,36,0.45)]"
+      className="text-amber-200/85 drop-shadow-[0_0_12px_rgba(251,191,36,0.32)]"
     >
       <path
         d="M24 6c-7 0-13 6.5-13 14.5 0 6 3.5 11 8 13.5-.5 2-1 4.5-1 7 0 5 2.5 7.5 6 7.5s6-2.5 6-7.5c0-2.5-.5-5-1-7 4.5-2.5 8-7.5 8-13.5C37 12.5 31 6 24 6Z"
@@ -208,7 +208,7 @@ function LeafGlyph({ size }: { size: number }) {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       aria-hidden
-      className="text-emerald-300/95 drop-shadow-[0_0_12px_rgba(52,211,153,0.4)]"
+      className="text-emerald-300/85 drop-shadow-[0_0_10px_rgba(52,211,153,0.28)]"
     >
       <path
         d="M38 10C26 10 14 18 10 30c12-2 22-10 28-20m0 0c-4 10-12 18-22 22"
@@ -246,7 +246,7 @@ export function ScrollAmbience() {
             style={{
               left: item.left,
               top: item.top,
-              opacity: Math.min(item.opacity + 0.08, 0.55),
+              opacity: Math.min(item.opacity + 0.06, 0.48),
               transform: `rotate(${item.rotate}deg)`,
             }}
           >
