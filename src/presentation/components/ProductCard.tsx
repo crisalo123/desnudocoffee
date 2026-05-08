@@ -1,5 +1,6 @@
 import type { Product } from '@/domain/product.types'
 import { getProductImageUrl } from '@/data/product-media'
+import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useCart } from '@/presentation/hooks/useCart'
 import { useProductPriceLabel } from '@/presentation/hooks/useProductPriceLabel'
@@ -11,12 +12,17 @@ interface ProductCardProps {
 export function ProductCard({ product }: ProductCardProps) {
   const { t } = useTranslation()
   const { addProduct, lines } = useCart()
+  const [summaryOpen, setSummaryOpen] = useState(false)
+
   const line = lines.find((l) => l.productId === product.id)
   const qty = line?.quantity ?? 0
 
   const nameKey = `products.${product.id}.name` as const
+  const summaryKey = `products.${product.id}.summary` as const
   const imgSrc = getProductImageUrl(product.id)
   const title = t(nameKey)
+  const summary = t(summaryKey)
+  const hasSummary = summary !== summaryKey
   const { label: priceLabel, approximate } = useProductPriceLabel(product.id)
 
   return (
@@ -56,6 +62,25 @@ export function ProductCard({ product }: ProductCardProps) {
               </span>
             ) : null}
           </p>
+        ) : null}
+
+        {hasSummary ? (
+          <div className="mt-3 border-t border-white/5 pt-3">
+            <p
+              className={`text-sm leading-relaxed text-stone-400 transition-[max-height] duration-300 ${
+                summaryOpen ? '' : 'line-clamp-3'
+              }`}
+            >
+              {summary}
+            </p>
+            <button
+              type="button"
+              onClick={() => setSummaryOpen((o) => !o)}
+              className="mt-2 text-left text-xs font-semibold uppercase tracking-wide text-denuded-gold/90 underline-offset-2 hover:text-denuded-gold hover:underline"
+            >
+              {summaryOpen ? t('product.read_less') : t('product.read_more')}
+            </button>
+          </div>
         ) : null}
 
         <div className="mt-auto flex items-center justify-between gap-3 pt-6">

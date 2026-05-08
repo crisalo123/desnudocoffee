@@ -28,7 +28,9 @@
   },
   "product": {
     "add": "Añadir",
-    "featured": "Destacado"
+    "featured": "Destacado",
+    "read_more": "Leer más",
+    "read_less": "Mostrar menos"
   },
   "price": {
     "per_bag": "/ bolsa",
@@ -63,70 +65,92 @@
   },
   "products": {
     "coffee_community_lot": {
-      "name": "Community Lot | Lavado | chocolate oscuro, toffee y tomillo"
+      "name": "Community Lot | Lavado | chocolate oscuro, toffee y tomillo",
+      "summary": "Microlote comunal de Colombia — lavado, chocolate oscuro y toffee con un toque de tomillo. Ideal para goteo o el día a día."
     },
     "coffee_colombia_miel": {
-      "name": "Colombia Miel | Yellow Honey"
+      "name": "Colombia Miel | Yellow Honey",
+      "summary": "Proceso yellow honey — membrillo, nuez y uva verde en una taza dulce y equilibrada, en la línea de la tienda."
     },
     "coffee_gesha_washed": {
-      "name": "Gesha | Lavado"
+      "name": "Gesha | Lavado",
+      "summary": "Elegancia Gesha en lavado — florales altos, dulzor fino y final casi a té. Misma familia que su High Tea Gesha."
     },
     "coffee_java_honey": {
-      "name": "Java | Honey"
+      "name": "Java | Honey",
+      "summary": "Java en honey — limón dulce, profundidad malteada y tacto sedoso; rico en espresso o V60."
     },
     "coffee_java_wild_natural": {
-      "name": "Java | Natural salvaje"
+      "name": "Java | Natural salvaje",
+      "summary": "Java natural salvaje — fruta amarilla, manzana verde y miel; vivo en espresso o filtro."
     },
     "coffee_caramel_apple_java": {
-      "name": "Caramel Apple Java"
+      "name": "Caramel Apple Java",
+      "summary": "Perfil tipo manzana acaramelada — manzana verde, nueces y dulzor tipo vainilla."
     },
     "coffee_caturra_esperanza": {
-      "name": "Caturra Esperanza"
+      "name": "Caturra Esperanza",
+      "summary": "Lote con Caturra al frente — limpieza, dulzor suave y cítrico ligero para el día a día."
     },
     "coffee_bourbon_rosado": {
-      "name": "Bourbon Rosado"
+      "name": "Bourbon Rosado",
+      "summary": "Espíritu bourbon rosado — panela, flores suaves y fruta roja seca en un lavado equilibrado."
     },
     "coffee_ethiopian_washed": {
-      "name": "Etíope lavado"
+      "name": "Etíope lavado",
+      "summary": "Etíope lavado clásico — floral tipo bergamota, cítrico brillante y cuerpo ligero a té."
     },
     "coffee_suenios_decaf": {
-      "name": "Desnudo Sueños DECAF (descafeinado)"
+      "name": "Desnudo Sueños DECAF (descafeinado)",
+      "summary": "Descafeinado con sabor — dulzor tipo cereal, especias cálidas y cáscara de naranja confitada."
     },
     "coffee_high_tea_gesha": {
-      "name": "High Tea Gesha"
+      "name": "High Tea Gesha",
+      "summary": "Su Gesha insignia — té negro inglés, melisa y grosella con claridad de variedad."
     },
     "coffee_big_bag": {
-      "name": "The Desnudo Big Bag (bolsa de 5 lb)"
+      "name": "The Desnudo Big Bag (bolsa de 5 lb)",
+      "summary": "Cinco libras de café fresco — misma idea que en trailer; el molido se elige al comprar en la web oficial."
     },
     "membership_bronze": {
-      "name": "Membresía Bronze"
+      "name": "Membresía Bronze",
+      "summary": "Bolsas recurrentes — eliges perfil y molido; opción SMS para escoger cada tueste como en su flujo."
     },
     "membership_silver": {
-      "name": "Membresía Silver"
+      "name": "Membresía Silver",
+      "summary": "Nivel superior con mejor precio por bolsa — más café, mismos beneficios que anuncian."
     },
     "membership_prepaid_year": {
-      "name": "Membresía regalo prepagada 1 año"
+      "name": "Membresía regalo prepagada 1 año",
+      "summary": "Regala un año pagado por adelantado — planes y caminos aventureros o clásicos como en desnudocoffee.com."
     },
     "membership_weekly_sub": {
-      "name": "Suscripción semanal de café recién tostado"
+      "name": "Suscripción semanal de café recién tostado",
+      "summary": "Ritmo semanal de tueste fresco — alineado con su membresía semanal y selección por SMS."
     },
     "chocolate_70_dark": {
-      "name": "Barra Desnudo Chocolate · 70% oscuro"
+      "name": "Barra Desnudo Chocolate · 70% oscuro",
+      "summary": "Barra 70% — cacao profundo, poco azúcar; compañera del espresso de tarde."
     },
     "chocolate_50_milk": {
-      "name": "Barra Desnudo Chocolate · 50% leche"
+      "name": "Barra Desnudo Chocolate · 50% leche",
+      "summary": "Chocolate con leche 50% — cremoso, fácil de compartir."
     },
     "merch_hat": {
-      "name": "Gorras Desnudo"
+      "name": "Gorras Desnudo",
+      "summary": "Gorras con marca — energía de café Austin para el día a día."
     },
     "merch_tote": {
-      "name": "Tote Bag Desnudo"
+      "name": "Tote Bag Desnudo",
+      "summary": "Tote resistente para grano, libros o mercado — branding sencillo."
     },
     "merch_tshirt": {
-      "name": "Camiseta Desnudo"
+      "name": "Camiseta Desnudo",
+      "summary": "Camisetas de algodón orgánico con bolsillo — suaves, con gráficos inspirados en la finca."
     },
     "merch_egift": {
-      "name": "Tarjeta regalo electrónica Desnudo"
+      "name": "Tarjeta regalo electrónica Desnudo",
+      "summary": "Tarjeta digital para su web — eliges monto al pagar en la tienda oficial."
     }
   }
 }

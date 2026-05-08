@@ -28,7 +28,9 @@
   },
   "product": {
     "add": "Add",
-    "featured": "Featured"
+    "featured": "Featured",
+    "read_more": "Read more",
+    "read_less": "Show less"
   },
   "price": {
     "per_bag": "/ bag",
@@ -63,70 +65,92 @@
   },
   "products": {
     "coffee_community_lot": {
-      "name": "Community Lot | Washed | dark chocolate, toffee and thyme"
+      "name": "Community Lot | Washed | dark chocolate, toffee and thyme",
+      "summary": "Colombia community microlot — washed, comforting dark chocolate and toffee with a hint of thyme. Easy as drip or a mellow daily cup."
     },
     "coffee_colombia_miel": {
-      "name": "Colombia Miel | Yellow Honey"
+      "name": "Colombia Miel | Yellow Honey",
+      "summary": "Yellow honey process — quince, pecan and green grape in a sweet, structured cup inspired by the shop listing."
     },
     "coffee_gesha_washed": {
-      "name": "Gesha | Washed"
+      "name": "Gesha | Washed",
+      "summary": "Gesha elegance in a washed cup — floral highs, refined sweetness and a tea-like finish. Same tier as their High Tea Gesha line."
     },
     "coffee_java_honey": {
-      "name": "Java | Honey"
+      "name": "Java | Honey",
+      "summary": "Java with honey process — sweet lemon, malty depth and a silky mouthfeel; great for pour-over or espresso."
     },
     "coffee_java_wild_natural": {
-      "name": "Java | Wild Natural"
+      "name": "Java | Wild Natural",
+      "summary": "Wild natural Java — yellow fruit, green apple and honeyed brightness; lively as espresso or filter."
     },
     "coffee_caramel_apple_java": {
-      "name": "Caramel Apple Java"
+      "name": "Caramel Apple Java",
+      "summary": "Java profile with caramel-apple charm — green apple, nuts and vanilla-leaning sweetness."
     },
     "coffee_caturra_esperanza": {
-      "name": "Caturra Esperanza"
+      "name": "Caturra Esperanza",
+      "summary": "Caturra-forward lot — clean sweetness, gentle citrus and a dependable everyday profile."
     },
     "coffee_bourbon_rosado": {
-      "name": "Bourbon Rosado"
+      "name": "Bourbon Rosado",
+      "summary": "Rosado bourbon vibe — brown sugar, soft florals and dried red fruit in a balanced washed style."
     },
     "coffee_ethiopian_washed": {
-      "name": "Ethiopian Washed"
+      "name": "Ethiopian Washed",
+      "summary": "Classic washed Ethiopia — bergamot-leaning florals, citrus sparkle and a tea-light body."
     },
     "coffee_suenios_decaf": {
-      "name": "Desnudo Sueños DECAF"
+      "name": "Desnudo Sueños DECAF",
+      "summary": "Decaf without compromise — frosted-flake sweetness, brown spice and dried orange peel in a cozy cup."
     },
     "coffee_high_tea_gesha": {
-      "name": "High Tea Gesha"
+      "name": "High Tea Gesha",
+      "summary": "Their Gesha microlot — English breakfast tea, lemon balm and currant notes with Gesha clarity."
     },
     "coffee_big_bag": {
-      "name": "The Desnudo Big Bag (5 lb)"
+      "name": "The Desnudo Big Bag (5 lb)",
+      "summary": "Five pounds of fresh coffee — same spirit as the trailer line; choose grind when you order on the main site."
     },
     "membership_bronze": {
-      "name": "Bronze Membership"
+      "name": "Bronze Membership",
+      "summary": "Recurring fresh bags — pick profile and grind; optional SMS to choose each week’s roast on their flow."
     },
     "membership_silver": {
-      "name": "Silver Membership"
+      "name": "Silver Membership",
+      "summary": "Step-up tier with better per-bag value — more coffee, same membership perks they advertise."
     },
     "membership_prepaid_year": {
-      "name": "Prepaid 1 Year Gift Membership"
+      "name": "Prepaid 1 Year Gift Membership",
+      "summary": "Gift a full year upfront — prepaid plans and adventurous or traditional paths as on desnudocoffee.com."
     },
     "membership_weekly_sub": {
-      "name": "Weekly subscription — freshly roasted coffee"
+      "name": "Weekly subscription — freshly roasted coffee",
+      "summary": "Weekly fresh-roast rhythm — aligned with their “Weekly Membership” cadence and SMS-friendly selection."
     },
     "chocolate_70_dark": {
-      "name": "Desnudo Chocolate Bar · 70% Dark"
+      "name": "Desnudo Chocolate Bar · 70% Dark",
+      "summary": "70% dark bar — deep cocoa, minimal sugar; made to pair with afternoon espresso."
     },
     "chocolate_50_milk": {
-      "name": "Desnudo Chocolate Bar · 50% Milk"
+      "name": "Desnudo Chocolate Bar · 50% Milk",
+      "summary": "50% milk chocolate — creamy, crowd-pleasing and easy to share."
     },
     "merch_hat": {
-      "name": "Desnudo Hats"
+      "name": "Desnudo Hats",
+      "summary": "Branded headwear — everyday Austin café energy between visits."
     },
     "merch_tote": {
-      "name": "Desnudo Tote Bag"
+      "name": "Desnudo Tote Bag",
+      "summary": "Sturdy tote for beans, books or market runs — simple branding, daily use."
     },
     "merch_tshirt": {
-      "name": "Desnudo T-Shirt"
+      "name": "Desnudo T-Shirt",
+      "summary": "Organic cotton pocket tees — soft daily wear with farm-inspired graphics from their merch line."
     },
     "merch_egift": {
-      "name": "Desnudo E-Gift Card"
+      "name": "Desnudo E-Gift Card",
+      "summary": "Digital gift card for their website — choose amount at checkout on the official store."
     }
   }
 }
