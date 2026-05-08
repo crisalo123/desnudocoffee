@@ -266,7 +266,7 @@ export function ScrollAmbience() {
     const reducedList = decoVisible.slice(0, mobileLite ? 6 : 8)
     return (
       <div
-        className="pointer-events-none fixed inset-0 z-0 overflow-x-hidden overflow-y-visible"
+        className="pointer-events-none fixed inset-0 z-0 overflow-hidden"
         aria-hidden
       >
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_90%_55%_at_50%_0%,rgba(201,169,98,0.12),transparent_65%),radial-gradient(ellipse_70%_45%_at_80%_90%,rgba(52,211,153,0.06),transparent)]" />
@@ -294,7 +294,7 @@ export function ScrollAmbience() {
 
   return (
     <div
-      className="pointer-events-none fixed inset-0 z-0 overflow-x-hidden overflow-y-visible"
+      className="pointer-events-none fixed inset-0 z-0 overflow-hidden"
       aria-hidden
     >
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_90%_55%_at_50%_-5%,rgba(201,169,98,0.16),transparent_60%),radial-gradient(ellipse_75%_50%_at_100%_80%,rgba(180,83,9,0.1),transparent),radial-gradient(ellipse_60%_40%_at_0%_70%,rgba(16,185,129,0.08),transparent)]" />
