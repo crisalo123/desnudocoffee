@@ -70,17 +70,16 @@ export function Hero({ onScrollCatalog, onWhatsApp }: HeroProps) {
         </div>
 
         <div className="relative mx-auto w-full max-w-lg lg:mx-0 lg:max-w-none">
-          <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-white/15 shadow-[0_24px_80px_-12px_rgba(0,0,0,0.65)] ring-1 ring-white/10">
+          <div className="relative flex min-h-[min(68vh,32rem)] w-full items-center justify-center overflow-hidden rounded-3xl border border-white/15 bg-[#0a0807] p-3 shadow-[0_24px_80px_-12px_rgba(0,0,0,0.65)] ring-1 ring-white/10 sm:min-h-[min(72vh,36rem)] sm:p-5">
             <img
               src={HERO_POSTER_URL}
               alt=""
               loading="eager"
               decoding="async"
               fetchPriority="high"
-              className="h-full w-full object-cover"
+              className="max-h-[min(78vh,42rem)] w-full object-contain object-center"
             />
-            <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-[#0a0807]/70 via-transparent to-amber-900/15" />
-            <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-[#0a0807]/90 to-transparent" />
+            <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#0a0807]/85 to-transparent sm:h-28" />
           </div>
           <p className="mt-3 text-center text-xs text-stone-500 lg:text-left">
             {t('hero.photo_credit')}
