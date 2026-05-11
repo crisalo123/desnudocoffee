@@ -89,10 +89,7 @@
       "name": "Caturra · Gentle wash · 250 g",
       "summary": "Bag: Caturra, gentle wash, 250 g, whole bean, medium roast; score ~87.25. Coffee from Colombia."
     },
-    "coffee_bourbon_rosado": {
-      "name": "Bourbon Pink · Gentle wash · 500 g",
-      "summary": "Packaging: Bourbon Pink Variety, Gentle Wash, 500 g, whole bean, medium roast; score 86.00. Colombia."
-    },
+    
     "coffee_ethiopian_washed": {
       "name": "Ethiopian Washed",
       "summary": "Cup profile: floral and citrus highland notes. The bag shown is DE MI TIERRA Premium Single Origin (graphic reference); confirm availability on WhatsApp."
@@ -117,10 +114,7 @@
       "name": "Silver Membership",
       "summary": "Step-up tier with better per-bag value — more coffee, same core membership perks."
     },
-    "membership_prepaid_year": {
-      "name": "Prepaid 1 Year Gift Membership",
-      "summary": "Gift a full year upfront — adventurous or classic paths depending on availability."
-    },
+   
     "membership_weekly_sub": {
       "name": "Weekly subscription — freshly roasted coffee",
       "summary": "Weekly fresh-roast rhythm — selection and logistics we fine-tune with you."

@@ -89,10 +89,7 @@
       "name": "Caturra · Gentle wash · 250 g",
       "summary": "Bolsa: Caturra, lavado suave, 250 g, en grano, tueste medio; puntuación ~87,25. Café de Colombia."
     },
-    "coffee_bourbon_rosado": {
-      "name": "Bourbon Pink · Gentle wash · 500 g",
-      "summary": "Empaque: Bourbon Pink Variety, Gentle Wash, 500 g, en grano, tueste medio; puntuación 86,00. Origen Colombia."
-    },
+ 
     "coffee_ethiopian_washed": {
       "name": "Etíope lavado",
       "summary": "Taza con notas florales y cítricas de alta meseta. La bolsa ilustrativa corresponde a la línea Premium Single Origin De Mi Tierra (referencia gráfica); confirma lote al pedir."
@@ -117,10 +114,7 @@
       "name": "Membresía Silver",
       "summary": "Nivel superior con mejor precio por bolsa — más café, mismos beneficios habituales de membresía."
     },
-    "membership_prepaid_year": {
-      "name": "Membresía regalo prepagada 1 año",
-      "summary": "Regala un año pagado por adelantado — planes aventureros o clásicos según disponibilidad."
-    },
+   
     "membership_weekly_sub": {
       "name": "Suscripción semanal de café recién tostado",
       "summary": "Ritmo semanal de tueste fresco — selección y logística las afinamos contigo."
