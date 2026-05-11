@@ -1,6 +1,6 @@
 {
-  "brand": "Desnudo Coffee",
-  "tagline": "El cambio es posible, una finca a la vez.",
+  "brand": "DE MI TIERRA",
+  "tagline": "Del campo a tu taza, con orgullo de nuestra tierra.",
   "nav": {
     "explore": "Explorar",
     "contact": "Pedir por WhatsApp",
@@ -8,12 +8,12 @@
     "cart_empty": "Tu selección está vacía"
   },
   "hero": {
-    "eyebrow": "Austin · Comercio directo · Microlotes",
-    "title": "Café con propósito, tostado con mimo.",
-    "subtitle": "Un escaparate simple con nuestros microlotes, membresías y productos esenciales. Cuando quieras comprar, cerramos por WhatsApp.",
+    "eyebrow": "Colombia · Origen · Microlotes",
+    "title": "Café con propósito, de nuestra tierra a tu mesa.",
+    "subtitle": "Un escaparate simple con microlotes, membresías y productos esenciales. Cuando quieras comprar, cerramos por WhatsApp.",
     "cta_catalog": "Ver oferta",
     "cta_whatsapp": "Escríbenos",
-    "photo_credit": "Imagen de Desnudo Coffee — Austin"
+    "photo_credit": "Imagen decorativa — vitrina DE MI TIERRA"
   },
   "trust": {
     "direct": "Relación directa con productores",
@@ -35,7 +35,7 @@
   "price": {
     "per_bag": "/ bolsa",
     "from": "Desde",
-    "approx_hint": "Precio orientativo según desnudocoffee.com — confirmar al pedir."
+    "approx_hint": "Precio orientativo — confirmar al pedir por WhatsApp."
   },
   "cart": {
     "title": "Tu selección",
@@ -49,108 +49,105 @@
     "badge": "artículos"
   },
   "whatsapp": {
-    "intro": "Hola Desnudo Coffee — me interesa consultar por:",
+    "intro": "Hola DE MI TIERRA — me interesa consultar por:",
     "outro": "¡Gracias!"
   },
   "footer": {
-    "rights": "© {{year}} Desnudo Coffee. Inspirado en desnudocoffee.com — vitrina independiente.",
-    "locations_title": "Visítanos en Austin",
+    "rights": "© {{year}} DE MI TIERRA.",
+    "locations_title": "Contacto y puntos de venta",
     "instagram": "Instagram"
   },
   "locations": {
-    "east": "2505 Webberville Rd — Lun–Vie 7–14 · Fin de semana 7:30–14:30",
-    "downtown": "111 Congress Ave — Lun–Vie 7:30–14 · Fin de semana 8–14:30",
-    "lamar": "1904 S Lamar — Todos los días 7:30–14",
-    "west": "1214 W 6th St — Todos los días 8–14"
+    "body": "Horarios, envíos y ubicaciones los confirmamos contigo por WhatsApp."
   },
   "products": {
     "coffee_community_lot": {
-      "name": "Community Lot | Lavado | chocolate oscuro, toffee y tomillo",
-      "summary": "Microlote comunal de Colombia — lavado, chocolate oscuro y toffee con un toque de tomillo. Ideal para goteo o el día a día."
+      "name": "Microlote comunal · origen Colombia",
+      "summary": "Selección comunal que reúne perfiles de la región. La foto muestra cereza de café en proceso natural (seco), alineada con el trabajo en finca."
     },
     "coffee_colombia_miel": {
-      "name": "Colombia Miel | Yellow Honey",
-      "summary": "Proceso yellow honey — membrillo, nuez y uva verde en una taza dulce y equilibrada, en la línea de la tienda."
+      "name": "Colombia · Red Honey · Castillo · 500 g",
+      "summary": "Según empaque De Mi Tierra: proceso Red Honey, variedad Castillo, en grano y tueste medio; puntuación de taza ~87,25."
     },
     "coffee_gesha_washed": {
-      "name": "Gesha | Lavado",
-      "summary": "Elegancia Gesha en lavado — florales altos, dulzor fino y final casi a té. Misma familia que su High Tea Gesha."
+      "name": "Gesha · Gentle wash · 500 g",
+      "summary": "Bolsa frontal: Gesha, lavado suave (Gentle Wash), en grano, tueste medio; puntuación ~87. Café de Colombia."
     },
     "coffee_java_honey": {
-      "name": "Java | Honey",
-      "summary": "Java en honey — limón dulce, profundidad malteada y tacto sedoso; rico en espresso o V60."
+      "name": "Castillo · Lavado suave · 125 g",
+      "summary": "Empaque verde: Castillo, Gentle Wash, 125 g, en grano, tueste medio; puntuación ~85,75. Origen Colombia."
     },
     "coffee_java_wild_natural": {
-      "name": "Java | Natural salvaje",
-      "summary": "Java natural salvaje — fruta amarilla, manzana verde y miel; vivo en espresso o filtro."
+      "name": "Natural · Castillo · 500 g",
+      "summary": "Bolsa azul: proceso Natural, variedad Castillo, 500 g, en grano, tueste medio; puntuación ~85,75. Café de Colombia."
     },
     "coffee_caramel_apple_java": {
-      "name": "Caramel Apple Java",
-      "summary": "Perfil tipo manzana acaramelada — manzana verde, nueces y dulzor tipo vainilla."
+      "name": "Premium Single Origin · tueste medio",
+      "summary": "Línea gráfica Green Jay en empaque: Premium Single Origin, en grano, tueste medio. Perfil dulce y frutal; confirma lote al pedir."
     },
     "coffee_caturra_esperanza": {
-      "name": "Caturra Esperanza",
-      "summary": "Lote con Caturra al frente — limpieza, dulzor suave y cítrico ligero para el día a día."
+      "name": "Caturra · Gentle wash · 250 g",
+      "summary": "Bolsa: Caturra, lavado suave, 250 g, en grano, tueste medio; puntuación ~87,25. Café de Colombia."
     },
     "coffee_bourbon_rosado": {
-      "name": "Bourbon Rosado",
-      "summary": "Espíritu bourbon rosado — panela, flores suaves y fruta roja seca en un lavado equilibrado."
+      "name": "Bourbon Pink · Gentle wash · 500 g",
+      "summary": "Empaque: Bourbon Pink Variety, Gentle Wash, 500 g, en grano, tueste medio; puntuación 86,00. Origen Colombia."
     },
     "coffee_ethiopian_washed": {
       "name": "Etíope lavado",
-      "summary": "Etíope lavado clásico — floral tipo bergamota, cítrico brillante y cuerpo ligero a té."
+      "summary": "Taza con notas florales y cítricas de alta meseta. La bolsa ilustrativa corresponde a la línea Premium Single Origin De Mi Tierra (referencia gráfica); confirma lote al pedir."
     },
     "coffee_suenios_decaf": {
-      "name": "Desnudo Sueños DECAF (descafeinado)",
-      "summary": "Descafeinado con sabor — dulzor tipo cereal, especias cálidas y cáscara de naranja confitada."
+      "name": "Sueños DECAF (descafeinado)",
+      "summary": "Descafeinado con buen cuerpo. La imagen muestra el reverso del empaque (historia de proceso, contacto +57 310 808 0400); el producto descafeinado lo confirmamos por WhatsApp."
     },
     "coffee_high_tea_gesha": {
-      "name": "High Tea Gesha",
-      "summary": "Su Gesha insignia — té negro inglés, melisa y grosella con claridad de variedad."
+      "name": "Gesha · Gentle wash · 250 g",
+      "summary": "Bolsa 250 g: Gesha, lavado suave, en grano, tueste medio; puntuación ~87,25. Versión más pequeña de la línea Gesha."
     },
     "coffee_big_bag": {
-      "name": "The Desnudo Big Bag (bolsa de 5 lb)",
-      "summary": "Cinco libras de café fresco — misma idea que en trailer; el molido se elige al comprar en la web oficial."
+      "name": "Bolsa grande de café (5 lb)",
+      "summary": "Cinco libras de café fresco — el molido y los detalles los acordamos al pedir."
     },
     "membership_bronze": {
       "name": "Membresía Bronze",
-      "summary": "Bolsas recurrentes — eliges perfil y molido; opción SMS para escoger cada tueste como en su flujo."
+      "summary": "Bolsas recurrentes — eliges perfil y molido; opción de avisos para escoger cada tueste."
     },
     "membership_silver": {
       "name": "Membresía Silver",
-      "summary": "Nivel superior con mejor precio por bolsa — más café, mismos beneficios que anuncian."
+      "summary": "Nivel superior con mejor precio por bolsa — más café, mismos beneficios habituales de membresía."
     },
     "membership_prepaid_year": {
       "name": "Membresía regalo prepagada 1 año",
-      "summary": "Regala un año pagado por adelantado — planes y caminos aventureros o clásicos como en desnudocoffee.com."
+      "summary": "Regala un año pagado por adelantado — planes aventureros o clásicos según disponibilidad."
     },
     "membership_weekly_sub": {
       "name": "Suscripción semanal de café recién tostado",
-      "summary": "Ritmo semanal de tueste fresco — alineado con su membresía semanal y selección por SMS."
+      "summary": "Ritmo semanal de tueste fresco — selección y logística las afinamos contigo."
     },
     "chocolate_70_dark": {
-      "name": "Barra Desnudo Chocolate · 70% oscuro",
+      "name": "Barra de chocolate · 70% oscuro",
       "summary": "Barra 70% — cacao profundo, poco azúcar; compañera del espresso de tarde."
     },
     "chocolate_50_milk": {
-      "name": "Barra Desnudo Chocolate · 50% leche",
+      "name": "Barra de chocolate · 50% leche",
       "summary": "Chocolate con leche 50% — cremoso, fácil de compartir."
     },
     "merch_hat": {
-      "name": "Gorras Desnudo",
-      "summary": "Gorras con marca — energía de café Austin para el día a día."
+      "name": "Gorra",
+      "summary": "Gorra con identidad de marca — para el día a día."
     },
     "merch_tote": {
-      "name": "Tote Bag Desnudo",
-      "summary": "Tote resistente para grano, libros o mercado — branding sencillo."
+      "name": "Tote bag",
+      "summary": "Tote resistente para grano, libros o mercado — diseño sencillo y práctico."
     },
     "merch_tshirt": {
-      "name": "Camiseta Desnudo",
+      "name": "Camiseta",
       "summary": "Camisetas de algodón orgánico con bolsillo — suaves, con gráficos inspirados en la finca."
     },
     "merch_egift": {
-      "name": "Tarjeta regalo electrónica Desnudo",
-      "summary": "Tarjeta digital para su web — eliges monto al pagar en la tienda oficial."
+      "name": "Tarjeta regalo electrónica",
+      "summary": "Tarjeta digital — el monto y la entrega se definen al completar la compra."
     }
   }
 }

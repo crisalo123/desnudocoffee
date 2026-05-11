@@ -1,6 +1,6 @@
 {
-  "brand": "Desnudo Coffee",
-  "tagline": "Change is possible, one farm at a time.",
+  "brand": "DE MI TIERRA",
+  "tagline": "From our land to your cup.",
   "nav": {
     "explore": "Explore",
     "contact": "Order on WhatsApp",
@@ -8,12 +8,12 @@
     "cart_empty": "Your selection is empty"
   },
   "hero": {
-    "eyebrow": "Austin · Direct trade · Micro lots",
-    "title": "Coffee with purpose, roasted with care.",
-    "subtitle": "A simplified showcase of our essential microlots, memberships, and goods. When you're ready, we take your order on WhatsApp.",
+    "eyebrow": "Colombia · Origin · Micro lots",
+    "title": "Coffee with purpose, from our land to your table.",
+    "subtitle": "A simple showcase of microlots, memberships, and essentials. When you're ready, we take your order on WhatsApp.",
     "cta_catalog": "See offerings",
     "cta_whatsapp": "Chat with us",
-    "photo_credit": "Photography from Desnudo Coffee — Austin"
+    "photo_credit": "Decorative image — DE MI TIERRA showcase"
   },
   "trust": {
     "direct": "Direct relationships with producers",
@@ -35,7 +35,7 @@
   "price": {
     "per_bag": "/ bag",
     "from": "From",
-    "approx_hint": "Indicative price from desnudocoffee.com — confirm when you order."
+    "approx_hint": "Indicative price — confirm when you order on WhatsApp."
   },
   "cart": {
     "title": "Your selection",
@@ -49,108 +49,105 @@
     "badge": "items"
   },
   "whatsapp": {
-    "intro": "Hello Desnudo Coffee — I'd like to inquire about:",
+    "intro": "Hello DE MI TIERRA — I'd like to inquire about:",
     "outro": "Thank you!"
   },
   "footer": {
-    "rights": "© {{year}} Desnudo Coffee. Inspired by desnudocoffee.com — independent showcase.",
-    "locations_title": "Visit us in Austin",
+    "rights": "© {{year}} DE MI TIERRA.",
+    "locations_title": "Contact & pickup",
     "instagram": "Instagram"
   },
   "locations": {
-    "east": "2505 Webberville Rd — Weekdays 7–2 · Weekends 7:30–2:30",
-    "downtown": "111 Congress Ave — Mon–Fri 7:30–2 · Weekends 8–2:30",
-    "lamar": "1904 S Lamar — Daily 7:30–2",
-    "west": "1214 W 6th St — Daily 8–2"
+    "body": "Hours, shipping, and locations — we'll confirm the details with you on WhatsApp."
   },
   "products": {
     "coffee_community_lot": {
-      "name": "Community Lot | Washed | dark chocolate, toffee and thyme",
-      "summary": "Colombia community microlot — washed, comforting dark chocolate and toffee with a hint of thyme. Easy as drip or a mellow daily cup."
+      "name": "Community microlot · Colombia origin",
+      "summary": "A communal selection from the region. The photo shows dried natural-process cherries on the farm — aligned with traceable community lots."
     },
     "coffee_colombia_miel": {
-      "name": "Colombia Miel | Yellow Honey",
-      "summary": "Yellow honey process — quince, pecan and green grape in a sweet, structured cup inspired by the shop listing."
+      "name": "Colombia · Red Honey · Castillo · 500 g",
+      "summary": "Per DE MI TIERRA bag: Red Honey process, Castillo variety, whole bean, medium roast; cup score ~87.25."
     },
     "coffee_gesha_washed": {
-      "name": "Gesha | Washed",
-      "summary": "Gesha elegance in a washed cup — floral highs, refined sweetness and a tea-like finish. Same tier as their High Tea Gesha line."
+      "name": "Gesha · Gentle wash · 500 g",
+      "summary": "Front of bag: Gesha, Gentle Wash, whole bean, medium roast; score ~87. Coffee from Colombia."
     },
     "coffee_java_honey": {
-      "name": "Java | Honey",
-      "summary": "Java with honey process — sweet lemon, malty depth and a silky mouthfeel; great for pour-over or espresso."
+      "name": "Castillo · Gentle wash · 125 g",
+      "summary": "Green bag: Castillo, Gentle Wash, 125 g, whole bean, medium roast; score ~85.75. Colombia origin."
     },
     "coffee_java_wild_natural": {
-      "name": "Java | Wild Natural",
-      "summary": "Wild natural Java — yellow fruit, green apple and honeyed brightness; lively as espresso or filter."
+      "name": "Natural · Castillo · 500 g",
+      "summary": "Blue bag: Natural process, Castillo, 500 g, whole bean, medium roast; score ~85.75. Coffee from Colombia."
     },
     "coffee_caramel_apple_java": {
-      "name": "Caramel Apple Java",
-      "summary": "Java profile with caramel-apple charm — green apple, nuts and vanilla-leaning sweetness."
+      "name": "Premium Single Origin · medium roast",
+      "summary": "Green Jay artwork on the bag: Premium Single Origin, whole bean, medium roast. Sweet, fruity line — confirm the exact lot when you order."
     },
     "coffee_caturra_esperanza": {
-      "name": "Caturra Esperanza",
-      "summary": "Caturra-forward lot — clean sweetness, gentle citrus and a dependable everyday profile."
+      "name": "Caturra · Gentle wash · 250 g",
+      "summary": "Bag: Caturra, gentle wash, 250 g, whole bean, medium roast; score ~87.25. Coffee from Colombia."
     },
     "coffee_bourbon_rosado": {
-      "name": "Bourbon Rosado",
-      "summary": "Rosado bourbon vibe — brown sugar, soft florals and dried red fruit in a balanced washed style."
+      "name": "Bourbon Pink · Gentle wash · 500 g",
+      "summary": "Packaging: Bourbon Pink Variety, Gentle Wash, 500 g, whole bean, medium roast; score 86.00. Colombia."
     },
     "coffee_ethiopian_washed": {
       "name": "Ethiopian Washed",
-      "summary": "Classic washed Ethiopia — bergamot-leaning florals, citrus sparkle and a tea-light body."
+      "summary": "Cup profile: floral and citrus highland notes. The bag shown is DE MI TIERRA Premium Single Origin (graphic reference); confirm availability on WhatsApp."
     },
     "coffee_suenios_decaf": {
-      "name": "Desnudo Sueños DECAF",
-      "summary": "Decaf without compromise — frosted-flake sweetness, brown spice and dried orange peel in a cozy cup."
+      "name": "Sueños DECAF",
+      "summary": "Full-flavored decaf. The image is the back of the bag (process story, contact +57 310 808 0400); we confirm the decaf SKU when you order."
     },
     "coffee_high_tea_gesha": {
-      "name": "High Tea Gesha",
-      "summary": "Their Gesha microlot — English breakfast tea, lemon balm and currant notes with Gesha clarity."
+      "name": "Gesha · Gentle wash · 250 g",
+      "summary": "250 g bag: Gesha, gentle wash, whole bean, medium roast; score ~87.25. Smaller format in the Gesha line."
     },
     "coffee_big_bag": {
-      "name": "The Desnudo Big Bag (5 lb)",
-      "summary": "Five pounds of fresh coffee — same spirit as the trailer line; choose grind when you order on the main site."
+      "name": "Large coffee bag (5 lb)",
+      "summary": "Five pounds of fresh coffee — grind and details are confirmed when you order."
     },
     "membership_bronze": {
       "name": "Bronze Membership",
-      "summary": "Recurring fresh bags — pick profile and grind; optional SMS to choose each week’s roast on their flow."
+      "summary": "Recurring fresh bags — pick profile and grind; optional heads-up to choose each week's roast."
     },
     "membership_silver": {
       "name": "Silver Membership",
-      "summary": "Step-up tier with better per-bag value — more coffee, same membership perks they advertise."
+      "summary": "Step-up tier with better per-bag value — more coffee, same core membership perks."
     },
     "membership_prepaid_year": {
       "name": "Prepaid 1 Year Gift Membership",
-      "summary": "Gift a full year upfront — prepaid plans and adventurous or traditional paths as on desnudocoffee.com."
+      "summary": "Gift a full year upfront — adventurous or classic paths depending on availability."
     },
     "membership_weekly_sub": {
       "name": "Weekly subscription — freshly roasted coffee",
-      "summary": "Weekly fresh-roast rhythm — aligned with their “Weekly Membership” cadence and SMS-friendly selection."
+      "summary": "Weekly fresh-roast rhythm — selection and logistics we fine-tune with you."
     },
     "chocolate_70_dark": {
-      "name": "Desnudo Chocolate Bar · 70% Dark",
+      "name": "Chocolate bar · 70% dark",
       "summary": "70% dark bar — deep cocoa, minimal sugar; made to pair with afternoon espresso."
     },
     "chocolate_50_milk": {
-      "name": "Desnudo Chocolate Bar · 50% Milk",
+      "name": "Chocolate bar · 50% milk",
       "summary": "50% milk chocolate — creamy, crowd-pleasing and easy to share."
     },
     "merch_hat": {
-      "name": "Desnudo Hats",
-      "summary": "Branded headwear — everyday Austin café energy between visits."
+      "name": "Hat",
+      "summary": "Branded headwear — everyday wear."
     },
     "merch_tote": {
-      "name": "Desnudo Tote Bag",
-      "summary": "Sturdy tote for beans, books or market runs — simple branding, daily use."
+      "name": "Tote bag",
+      "summary": "Sturdy tote for beans, books or market runs — simple, practical design."
     },
     "merch_tshirt": {
-      "name": "Desnudo T-Shirt",
-      "summary": "Organic cotton pocket tees — soft daily wear with farm-inspired graphics from their merch line."
+      "name": "T-shirt",
+      "summary": "Organic cotton pocket tees — soft daily wear with farm-inspired graphics."
     },
     "merch_egift": {
-      "name": "Desnudo E-Gift Card",
-      "summary": "Digital gift card for their website — choose amount at checkout on the official store."
+      "name": "E-gift card",
+      "summary": "Digital gift card — amount and delivery are set at checkout."
     }
   }
 }

@@ -5,9 +5,14 @@ import es from './locales/es.json'
 
 export const defaultNS = 'translation' as const
 
+const LOCALE_STORAGE_KEY = 'demitierra-locale'
+const LEGACY_LOCALE_STORAGE_KEY = 'desnudo-locale'
+
 function detectLocale(): 'en' | 'es' {
   try {
-    const stored = localStorage.getItem('desnudo-locale')
+    const stored =
+      localStorage.getItem(LOCALE_STORAGE_KEY) ??
+      localStorage.getItem(LEGACY_LOCALE_STORAGE_KEY)
     if (stored === 'en' || stored === 'es') return stored
   } catch {
     /* ignore */
@@ -35,7 +40,8 @@ export type AppLocale = 'en' | 'es'
 export function setLocale(lng: AppLocale): void {
   void i18n.changeLanguage(lng)
   try {
-    localStorage.setItem('desnudo-locale', lng)
+    localStorage.setItem(LOCALE_STORAGE_KEY, lng)
+    localStorage.removeItem(LEGACY_LOCALE_STORAGE_KEY)
   } catch {
     /* ignore */
   }

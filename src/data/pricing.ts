@@ -1,5 +1,5 @@
 /**
- * Precios alineados con la tienda oficial desnudocoffee.com (USD).
+ * Precios de referencia en USD (orientativos en vitrina).
  * Los centavos siguen el modelo de Shopify (entero = centavos).
  *
  * Donde no hay título idéntico en catálogo, se usa el microlote más cercano

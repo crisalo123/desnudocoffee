@@ -1,4 +1,4 @@
-
+import { BRAND_LOGO_URL } from '@/data/product-media'
 import { setLocale, type AppLocale } from '@/infrastructure/i18n/i18n.config'
 import { useTranslation } from 'react-i18next'
 import { useCart } from '@/presentation/hooks/useCart'
@@ -16,8 +16,16 @@ export function Header({ onOpenCart }: HeaderProps) {
   return (
     <header className="sticky top-0 z-40 border-b border-white/10 bg-[#0a0807]/80 backdrop-blur-xl">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4 sm:px-6">
-        <a href="#" className="group flex items-center gap-3 text-left sm:gap-4">
-          
+        <a href="#" className="group flex min-w-0 items-center gap-3 text-left sm:gap-4">
+          <span className="relative flex shrink-0 items-center justify-center rounded-xl bg-[#0a0807] p-1 shadow-[0_0_0_1px_rgba(255,255,255,0.06)] sm:p-1.5">
+            <img
+              src={BRAND_LOGO_URL}
+              alt=""
+              decoding="async"
+              draggable={false}
+              className="h-14 w-auto max-h-18 max-w-44 object-contain object-left transform-gpu sm:h-19 sm:max-h-20 sm:max-w-52 md:h-20 md:max-w-60"
+            />
+          </span>
           <div className="flex min-w-0 flex-col border-l border-white/10 pl-3 sm:pl-4">
             <span className="font-display text-lg tracking-tight text-denuded-parchment transition group-hover:text-denuded-gold sm:text-xl">
               {t('brand')}
