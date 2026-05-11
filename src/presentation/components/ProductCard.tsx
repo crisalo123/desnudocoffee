@@ -1,5 +1,8 @@
 import type { Product } from '@/domain/product.types'
-import { getProductImageUrl } from '@/data/product-media'
+import {
+  getProductImageUrl,
+  isUserAdjustedProductImage,
+} from '@/data/product-media'
 import { useId, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useCart } from '@/presentation/hooks/useCart'
@@ -21,6 +24,7 @@ export function ProductCard({ product }: ProductCardProps) {
   const nameKey = `products.${product.id}.name` as const
   const summaryKey = `products.${product.id}.summary` as const
   const imgSrc = getProductImageUrl(product.id)
+  const userAdjustedImg = isUserAdjustedProductImage(imgSrc)
   const title = t(nameKey)
   const summary = t(summaryKey)
   const hasSummary = summary !== summaryKey
@@ -28,13 +32,21 @@ export function ProductCard({ product }: ProductCardProps) {
 
   return (
     <article className="group relative flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.07] to-transparent shadow-lg shadow-black/20 transition hover:border-denuded-gold/35 hover:shadow-denuded-gold/10">
-      <div className="relative aspect-[5/4] overflow-hidden bg-stone-900/80">
+      <div
+        className={`relative aspect-[5/4] overflow-hidden bg-stone-900/80 ${
+          userAdjustedImg ? 'flex items-center justify-center p-2 sm:p-3' : ''
+        }`}
+      >
         <img
           src={imgSrc}
           alt=""
           loading="lazy"
           decoding="async"
-          className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]"
+          className={
+            userAdjustedImg
+              ? 'max-h-full w-full object-contain object-center transition duration-500'
+              : 'h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]'
+          }
         />
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#0a0807]/90 via-transparent to-transparent opacity-90" />
         {product.featured ? (

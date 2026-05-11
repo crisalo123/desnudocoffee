@@ -1,37 +1,24 @@
 /**
- * Hero: imagen principal desde el CDN de la tienda.
- * Logo y fotos: `src/assets`. Cada import se emparejó leyendo el texto del empaque:
+ * Medios en `src/assets` para catálogo y logo.
+ * Hero: foto principal del CDN público de desnudocoffee.com (Shopify).
  *
- * - `cafe.jpeg` — cerezas de café secas (natural), sin texto → microlote comunal / origen.
- * - `…56 PM (1)` — Premium Single Origin, Green Jay, grano, tueste medio.
- * - `…56 PM (2)` — Red Honey, Castillo, 500 g, ~87.25 pts.
- * - `…56 PM (3)` — Gentle Wash, Bourbon Pink, 500 g, 86.00 pts.
- * - `…56 PM (4)` — Reverso: variedad Gesha, lavado suave, datos de contacto.
- * - `…56 PM (5)` — Gentle Wash, Gesha, 500 g, ~87 pts.
- * - `…57 PM.jpeg` — Gesha, Gentle Wash, 250 g, ~87.25 pts.
- * - `…57 PM (1)` — Natural, Castillo, 500 g, ~85.75 pts.
- * - `…57 PM (2)` — Gentle Wash, Castillo, 125 g, ~85.75 pts.
- * - `…57 PM (3)` — Gentle Wash, Caturra, 250 g, ~87.25 pts.
- *
- * Membresías / chocolate / merch no tienen foto propia: se reutilizan bolsas sin duplicar
- * la misma imagen en ítems consecutivos del `CATALOG`.
+ * Catálogo: cada URL de imagen aparece como máximo **2 veces** (como mucho un duplicado por archivo).
  */
 import { CATALOG } from '@/data/catalog'
 import cafe from '@/assets/cafe.jpeg'
 import logo from '@/assets/logo.jpeg'
-import wa56_1 from '@/assets/WhatsApp Image 2026-05-08 at 7.58.56 PM (1).jpeg'
-import wa56_2 from '@/assets/WhatsApp Image 2026-05-08 at 7.58.56 PM (2).jpeg'
-import wa56_3 from '@/assets/WhatsApp Image 2026-05-08 at 7.58.56 PM (3).jpeg'
-import wa56_4 from '@/assets/WhatsApp Image 2026-05-08 at 7.58.56 PM (4).jpeg'
-import wa56_5 from '@/assets/WhatsApp Image 2026-05-08 at 7.58.56 PM (5).jpeg'
-import wa57 from '@/assets/WhatsApp Image 2026-05-08 at 7.58.57 PM.jpeg'
-import wa57_1 from '@/assets/WhatsApp Image 2026-05-08 at 7.58.57 PM (1).jpeg'
-import wa57_2 from '@/assets/WhatsApp Image 2026-05-08 at 7.58.57 PM (2).jpeg'
-import wa57_3 from '@/assets/WhatsApp Image 2026-05-08 at 7.58.57 PM (3).jpeg'
+import img1 from '@/assets/img_1.png'
+import img2 from '@/assets/img_2.png'
+import img3 from '@/assets/img_3.png'
+import img4 from '@/assets/img_4.png'
+import img5 from '@/assets/img_5.png'
+import img6 from '@/assets/img_6.png'
+import img7 from '@/assets/img_7.png'
+import img8 from '@/assets/img_8.jpeg'
+import img9 from '@/assets/img_9.png'
 
 const W = 900
 
-/** URL optimizada por Shopify Image API (solo hero / respaldo) */
 export function shopifyFileUrl(
   filenameWithQuery: string,
   width = W,
@@ -51,32 +38,41 @@ export const HERO_POSTER_URL = shopifyFileUrl(
   1600,
 )
 
+/** Rellenos CDN (distintos del trío del hero); cada uno como máximo 2 usos en el mapa. */
+const SHOP_CHOC_70 = shopifyFileUrl('Desnudo-20.jpg?v=1767970528', 900)
+const SHOP_CHOC_50 = shopifyFileUrl('Desnudo-24.jpg?v=1767970182', 900)
+const SHOP_MEMBERSHIP = shopifyFileUrl(
+  'Desnudo-186_26265633-71bd-48e9-8785-31e13230c182.jpg?v=1769144631',
+  900,
+)
+const SHOP_MERCH = shopifyFileUrl('Farm_WhiteBG.png?v=1776446917', 900)
+
 const PRODUCT_IMAGE_LOCAL: Record<string, string> = {
   coffee_community_lot: cafe,
-  coffee_colombia_miel: wa56_2,
-  coffee_gesha_washed: wa56_5,
-  coffee_java_honey: wa57_2,
-  coffee_java_wild_natural: wa57_1,
-  coffee_caramel_apple_java: wa56_1,
-  coffee_caturra_esperanza: wa57_3,
-  coffee_bourbon_rosado: wa56_3,
-  coffee_ethiopian_washed: wa56_1,
-  coffee_suenios_decaf: wa56_4,
-  coffee_high_tea_gesha: wa57,
-  coffee_big_bag: wa56_2,
-  membership_bronze: wa56_3,
-  membership_silver: wa56_4,
-  membership_prepaid_year: wa56_5,
-  membership_weekly_sub: wa57,
-  chocolate_70_dark: wa57_3,
-  chocolate_50_milk: wa57_1,
-  merch_hat: wa57_2,
-  merch_tote: wa56_1,
-  merch_tshirt: wa56_5,
-  merch_egift: wa56_2,
+  coffee_colombia_miel: img1,
+  coffee_gesha_washed: img6,
+  coffee_java_honey: img4,
+  coffee_java_wild_natural: img7,
+  coffee_caramel_apple_java: img5,
+  coffee_caturra_esperanza: img9,
+  coffee_bourbon_rosado: img2,
+  coffee_ethiopian_washed: img8,
+  coffee_suenios_decaf: img3,
+  coffee_high_tea_gesha: img6,
+  coffee_big_bag: img4,
+  membership_bronze: img2,
+  membership_silver: img9,
+  membership_prepaid_year: SHOP_MEMBERSHIP,
+  membership_weekly_sub: SHOP_CHOC_50,
+  chocolate_70_dark: SHOP_CHOC_70,
+  chocolate_50_milk: SHOP_CHOC_50,
+  merch_hat: img8,
+  merch_tote: SHOP_MEMBERSHIP,
+  merch_tshirt: SHOP_MERCH,
+  merch_egift: SHOP_CHOC_70,
 }
 
-const DEFAULT_PRODUCT_FALLBACK = wa56_1
+const DEFAULT_PRODUCT_FALLBACK = img2
 
 for (const p of CATALOG) {
   if (PRODUCT_IMAGE_LOCAL[p.id] === undefined) {
@@ -86,6 +82,31 @@ for (const p of CATALOG) {
   }
 }
 
+/** Comprueba en desarrollo que ninguna URL se use más de 2 veces. */
+function assertMaxTwoUsesPerUrl(): void {
+  const counts = new Map<string, number>()
+  for (const url of Object.values(PRODUCT_IMAGE_LOCAL)) {
+    counts.set(url, (counts.get(url) ?? 0) + 1)
+  }
+  for (const [url, n] of counts) {
+    if (n > 2) {
+      throw new Error(
+        `[product-media] La imagen se usa ${n} veces (máx. 2): ${url.slice(0, 80)}…`,
+      )
+    }
+  }
+}
+
+assertMaxTwoUsesPerUrl()
+
 export function getProductImageUrl(productId: string, _width = W): string {
   return PRODUCT_IMAGE_LOCAL[productId] ?? DEFAULT_PRODUCT_FALLBACK
+}
+
+/**
+ * Imágenes que ajustaste en `src/assets` (`img_1`, `img_2`, …).
+ * Vite publica rutas tipo `…/img_1-abc123.png` — usamos esto para no recortarlas en la UI.
+ */
+export function isUserAdjustedProductImage(src: string): boolean {
+  return /img_\d+/i.test(src)
 }

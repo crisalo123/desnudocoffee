@@ -1,4 +1,7 @@
-import { getProductImageUrl } from '@/data/product-media'
+import {
+  getProductImageUrl,
+  isUserAdjustedProductImage,
+} from '@/data/product-media'
 import { productPriceParts } from '@/presentation/formatting/productPriceLabel'
 import { useTranslation } from 'react-i18next'
 import { useCart } from '@/presentation/hooks/useCart'
@@ -63,6 +66,8 @@ export function CartDrawer({ open, onClose }: CartDrawerProps) {
           ) : (
             <ul className="space-y-4">
               {lines.map((line) => {
+                const lineImg = getProductImageUrl(line.productId, 160)
+                const lineImgNatural = isUserAdjustedProductImage(lineImg)
                 const { label: linePrice, approximate: lineApprox } =
                   productPriceParts(line.productId, i18n.language, t)
                 return (
@@ -72,9 +77,11 @@ export function CartDrawer({ open, onClose }: CartDrawerProps) {
                 >
                   <div className="flex min-w-0 flex-1 items-start gap-3">
                     <img
-                      src={getProductImageUrl(line.productId, 160)}
+                      src={lineImg}
                       alt=""
-                      className="h-14 w-14 shrink-0 rounded-lg border border-white/10 object-cover"
+                      className={`h-14 w-14 shrink-0 rounded-lg border border-white/10 bg-stone-900/90 p-0.5 ${
+                        lineImgNatural ? 'object-contain' : 'object-cover'
+                      }`}
                     />
                     <div className="min-w-0">
                       <p className="font-medium leading-snug text-denuded-parchment">
