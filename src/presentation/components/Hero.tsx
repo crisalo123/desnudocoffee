@@ -1,5 +1,7 @@
 import { HERO_POSTER_URL } from '@/data/product-media'
+import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import { ImageZoomLightbox } from '@/presentation/components/ImageZoomLightbox'
 
 interface HeroProps {
   onScrollCatalog: () => void
@@ -8,6 +10,10 @@ interface HeroProps {
 
 export function Hero({ onScrollCatalog, onWhatsApp }: HeroProps) {
   const { t } = useTranslation()
+  const [posterZoomOpen, setPosterZoomOpen] = useState(false)
+  const zoomDialogName = t('product.zoom_dialog_named', {
+    name: `${t('brand')} · ${t('hero.eyebrow')}`,
+  })
 
   return (
     <section className="relative overflow-hidden border-b border-white/10">
@@ -70,7 +76,7 @@ export function Hero({ onScrollCatalog, onWhatsApp }: HeroProps) {
         </div>
 
         <div className="relative mx-auto w-full max-w-lg lg:mx-0 lg:max-w-none">
-          <div className="relative flex min-h-[min(68vh,32rem)] w-full items-center justify-center overflow-hidden rounded-3xl border border-white/15 bg-[#0a0807] p-3 shadow-[0_24px_80px_-12px_rgba(0,0,0,0.65)] ring-1 ring-white/10 sm:min-h-[min(72vh,36rem)] sm:p-5">
+          <div className="group/poster relative flex min-h-[min(68vh,32rem)] w-full items-center justify-center overflow-hidden rounded-3xl border border-white/15 bg-[#0a0807] p-3 shadow-[0_24px_80px_-12px_rgba(0,0,0,0.65)] ring-1 ring-white/10 transition-[box-shadow] duration-300 hover:shadow-[0_28px_90px_-14px_rgba(201,169,98,0.12)] sm:min-h-[min(72vh,36rem)] sm:p-5">
             <img
               src={HERO_POSTER_URL}
               alt=""
@@ -80,10 +86,35 @@ export function Hero({ onScrollCatalog, onWhatsApp }: HeroProps) {
               className="max-h-[min(78vh,42rem)] w-full object-contain object-center"
             />
             <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#0a0807]/85 to-transparent sm:h-28" />
+            <span
+              className="pointer-events-none absolute bottom-4 right-4 flex h-10 w-10 items-center justify-center rounded-full border border-white/12 bg-black/40 text-denuded-gold/95 opacity-0 shadow-lg backdrop-blur-md transition duration-300 group-hover/poster:opacity-100 sm:bottom-5 sm:right-5"
+              aria-hidden
+            >
+              <svg className="h-[18px] w-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" aria-hidden>
+                <circle cx="10" cy="10" r="6.5" />
+                <path d="M15 15l5 5" strokeLinecap="round" />
+              </svg>
+            </span>
+            <button
+              type="button"
+              onClick={() => setPosterZoomOpen(true)}
+              aria-haspopup="dialog"
+              aria-expanded={posterZoomOpen}
+              aria-label={t('hero.image_zoom_open')}
+              className="absolute inset-0 z-[1] cursor-zoom-in rounded-3xl border-0 bg-transparent p-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-denuded-gold/70"
+            />
           </div>
           <p className="mt-3 text-center text-xs text-stone-500 lg:text-left">
             {t('hero.photo_credit')}
           </p>
+          <ImageZoomLightbox
+            open={posterZoomOpen}
+            onClose={() => setPosterZoomOpen(false)}
+            src={HERO_POSTER_URL}
+            alt=""
+            dialogLabel={zoomDialogName}
+            closeLabel={t('product.zoom_close')}
+          />
         </div>
       </div>
     </section>

@@ -1,8 +1,8 @@
 /**
- * Medios en `src/assets` para catálogo y logo.
- * Hero: misma imagen que «Natural · Castillo» (`coffee_java_wild_natural` → `img_7`), completa en el Hero.
+ * Medios en `src/assets`. Hero: `img_10` (ficha Red Honey Castillo + panel técnico), completa en Hero.
  *
- * Catálogo: solo assets locales (`cafe`, `img_*`).
+ * Catálogo: `img_11`–`img_16` y `img_1`–`img_9` según empaque. Cada URL como máximo **2** productos
+ * (con 22 ítems y 17 archivos hay varias parejas; se evitan triples).
  */
 import { CATALOG } from '@/data/catalog'
 import cafe from '@/assets/cafe.jpeg'
@@ -14,38 +14,46 @@ import img4 from '@/assets/img_4.png'
 import img5 from '@/assets/img_5.png'
 import img6 from '@/assets/img_6.png'
 import img7 from '@/assets/img_7.png'
+import img8 from '@/assets/img_8.jpeg'
 import img9 from '@/assets/img_9.png'
+import img10 from '@/assets/img_10.jpeg'
+import img11 from '@/assets/img_11.jpeg'
+import img12 from '@/assets/img_12.jpeg'
+import img13 from '@/assets/img_13.jpeg'
+import img14 from '@/assets/img_14.jpeg'
+import img15 from '@/assets/img_15.jpeg'
+import img16 from '@/assets/img_16.jpeg'
 
 const W = 900
 
 export const BRAND_LOGO_URL: string = logo
 
-/** Misma bolsa Natural · Castillo que el producto `coffee_java_wild_natural` (`img_7`). */
-export const HERO_POSTER_URL: string = img7
+/** Ficha comercial Red Honey / Castillo (`img_10`); misma línea visual que Colombia Miel en catálogo. */
+export const HERO_POSTER_URL: string = img10
 
 const PRODUCT_IMAGE_LOCAL: Record<string, string> = {
   coffee_community_lot: cafe,
-  coffee_colombia_miel: img1,
-  coffee_gesha_washed: img6,
-  coffee_java_honey: img4,
-  coffee_java_wild_natural: img7,
-  coffee_caramel_apple_java: img5,
-  coffee_caturra_esperanza: img9,
-  coffee_bourbon_rosado: img2,
-  coffee_ethiopian_washed: img2,
+  coffee_colombia_miel: img10,
+  coffee_gesha_washed: img14,
+  coffee_java_honey: img12,
+  coffee_java_wild_natural: img11,
+  coffee_caramel_apple_java: img1,
+  coffee_caturra_esperanza: img15,
+  coffee_bourbon_rosado: img16,
+  coffee_ethiopian_washed: img4,
   coffee_suenios_decaf: img3,
-  coffee_high_tea_gesha: img6,
-  coffee_big_bag: img4,
+  coffee_high_tea_gesha: img14,
+  coffee_big_bag: img13,
   membership_bronze: img2,
   membership_silver: img9,
-  membership_prepaid_year: img3,
+  membership_prepaid_year: img8,
   membership_weekly_sub: img7,
   chocolate_70_dark: img5,
-  chocolate_50_milk: img7,
+  chocolate_50_milk: img6,
   merch_hat: cafe,
-  merch_tote: img1,
+  merch_tote: img4,
   merch_tshirt: img6,
-  merch_egift: img4,
+  merch_egift: img7,
 }
 
 const DEFAULT_PRODUCT_FALLBACK = img2
@@ -58,8 +66,7 @@ for (const p of CATALOG) {
   }
 }
 
-/** Máximo de productos que comparten la misma URL (locales; algo >2 al final del catálogo). */
-const MAX_USES_PER_PRODUCT_IMAGE = 3
+const MAX_USES_PER_PRODUCT_IMAGE = 2
 
 function assertMaxUsesPerUrl(): void {
   const counts = new Map<string, number>()

@@ -13,7 +13,8 @@
     "subtitle": "Un escaparate simple con microlotes, membresías y productos esenciales. Cuando quieras comprar, cerramos por WhatsApp.",
     "cta_catalog": "Ver oferta",
     "cta_whatsapp": "Escríbenos",
-    "photo_credit": "Misma imagen que «Natural · Castillo» (img_7) — completa, sin recorte."
+    "photo_credit": "Imagen principal (img_10, ficha Red Honey Castillo) — completa, sin recorte.",
+    "image_zoom_open": "Ampliar imagen principal"
   },
   "trust": {
     "direct": "Relación directa con productores",
@@ -30,7 +31,10 @@
     "add": "Añadir",
     "featured": "Destacado",
     "details_open": "Sabor en detalle",
-    "details_hide": "Ocultar"
+    "details_hide": "Ocultar",
+    "zoom_open_named": "Ampliar imagen · {{name}}",
+    "zoom_close": "Cerrar vista ampliada",
+    "zoom_dialog_named": "Vista ampliada · {{name}}"
   },
   "price": {
     "per_bag": "/ bolsa",
@@ -66,30 +70,33 @@
       "summary": "Selección comunal que reúne perfiles de la región. La foto muestra cereza de café en proceso natural (seco), alineada con el trabajo en finca."
     },
     "coffee_colombia_miel": {
-      "name": "Colombia · Red Honey · Castillo · 500 g",
-      "summary": "Según empaque De Mi Tierra: proceso Red Honey, variedad Castillo, en grano y tueste medio; puntuación de taza ~87,25."
+      "name": "Colombia · Red Honey · Castillo",
+      "summary": "Ficha img_10: Castillo, red honey, grano, tueste medio; puntuación ~87,25. Bolsa 500 g; el panel indica también presentaciones 440 g, 220 g y 110 g."
     },
     "coffee_gesha_washed": {
-      "name": "Gesha · Gentle wash · 500 g",
-      "summary": "Bolsa frontal: Gesha, lavado suave (Gentle Wash), en grano, tueste medio; puntuación ~87. Café de Colombia."
+      "name": "Gesha · Gentle wash · 440 g",
+      "summary": "Ficha img_14: Gesha, suave lavado, grano, tueste medio; bolsa 440 g. Café de Colombia."
     },
     "coffee_java_honey": {
       "name": "Castillo · Lavado suave · 125 g",
-      "summary": "Empaque verde: Castillo, Gentle Wash, 125 g, en grano, tueste medio; puntuación ~85,75. Origen Colombia."
+      "summary": "Ficha img_12: empaque verde, Castillo, Gentle Wash, 125 g, en grano, tueste medio; puntuación ~85,75. Origen Colombia."
     },
     "coffee_java_wild_natural": {
-      "name": "Natural · Castillo · 500 g",
-      "summary": "Bolsa azul: proceso Natural, variedad Castillo, 500 g, en grano, tueste medio; puntuación ~85,75. Café de Colombia."
+      "name": "Natural · Castillo · 440 g",
+      "summary": "Ficha img_11: Castillo, beneficio natural, tueste medio, grano; bolsa 440 g y puntuación ~85,75. Café de Colombia."
     },
     "coffee_caramel_apple_java": {
       "name": "Premium Single Origin · tueste medio",
       "summary": "Línea gráfica Green Jay en empaque: Premium Single Origin, en grano, tueste medio. Perfil dulce y frutal; confirma lote al pedir."
     },
     "coffee_caturra_esperanza": {
-      "name": "Caturra · Gentle wash · 250 g",
-      "summary": "Bolsa: Caturra, lavado suave, 250 g, en grano, tueste medio; puntuación ~87,25. Café de Colombia."
+      "name": "Caturra · Gentle wash · 440 g",
+      "summary": "Ficha img_15: Caturra, suave lavado, grano, tueste medio; puntuación ~87,25. Presentaciones comerciales 440 g, 220 g y 110 g (según panel)."
     },
- 
+    "coffee_bourbon_rosado": {
+      "name": "Bourbon rosado · Gentle wash · 440 g",
+      "summary": "Ficha img_16: variedad Bourbon rosado, beneficio suave lavado, tueste medio; bolsa 440 g en grano. Café de Colombia."
+    },
     "coffee_ethiopian_washed": {
       "name": "Etíope lavado",
       "summary": "Taza con notas florales y cítricas de alta meseta. La bolsa ilustrativa corresponde a la línea Premium Single Origin De Mi Tierra (referencia gráfica); confirma lote al pedir."
@@ -99,12 +106,12 @@
       "summary": "Descafeinado con buen cuerpo. La imagen muestra el reverso del empaque (historia de proceso, contacto +57 310 808 0400); el producto descafeinado lo confirmamos por WhatsApp."
     },
     "coffee_high_tea_gesha": {
-      "name": "Gesha · Gentle wash · 250 g",
-      "summary": "Bolsa 250 g: Gesha, lavado suave, en grano, tueste medio; puntuación ~87,25. Versión más pequeña de la línea Gesha."
+      "name": "Gesha · Gentle wash (línea especial)",
+      "summary": "Misma referencia visual que el Gesha lavado (img_14): Geisha, suave lavado, tueste medio; confirma formato al pedir."
     },
     "coffee_big_bag": {
-      "name": "Bolsa grande de café (5 lb)",
-      "summary": "Cinco libras de café fresco — el molido y los detalles los acordamos al pedir."
+      "name": "Red Honey · Castillo · formato grande",
+      "summary": "Ficha img_13: Castillo red honey en grano, tueste medio; bolsa 500 g, puntuación ~87,25. Ideal para consumo alto o compartir; volumen exacto lo acordamos por WhatsApp."
     },
     "membership_bronze": {
       "name": "Membresía Bronze",
@@ -114,8 +121,14 @@
       "name": "Membresía Silver",
       "summary": "Nivel superior con mejor precio por bolsa — más café, mismos beneficios habituales de membresía."
     },
-   
-   
+    "membership_prepaid_year": {
+      "name": "Membresía regalo prepagada 1 año",
+      "summary": "Regala un año pagado por adelantado — planes y presentaciones según disponibilidad (imagen referencial)."
+    },
+    "membership_weekly_sub": {
+      "name": "Suscripción semanal de café recién tostado",
+      "summary": "Ritmo semanal — imagen alineada con línea de tueste medio y presentaciones 440 / 220 / 110 g en ficha (img_7)."
+    },
     "chocolate_70_dark": {
       "name": "Barra de chocolate · 70% oscuro",
       "summary": "Barra 70% — cacao profundo, poco azúcar; compañera del espresso de tarde."

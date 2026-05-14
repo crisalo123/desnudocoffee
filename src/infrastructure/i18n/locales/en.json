@@ -13,7 +13,8 @@
     "subtitle": "A simple showcase of microlots, memberships, and essentials. When you're ready, we take your order on WhatsApp.",
     "cta_catalog": "See offerings",
     "cta_whatsapp": "Chat with us",
-    "photo_credit": "Same image as “Natural · Castillo” (img_7) — full frame, no crop."
+    "photo_credit": "Main image (img_10, Red Honey Castillo spec sheet) — full frame, no crop.",
+    "image_zoom_open": "Enlarge hero image"
   },
   "trust": {
     "direct": "Direct relationships with producers",
@@ -30,7 +31,10 @@
     "add": "Add",
     "featured": "Featured",
     "details_open": "Flavor snapshot",
-    "details_hide": "Hide"
+    "details_hide": "Hide",
+    "zoom_open_named": "Enlarge image · {{name}}",
+    "zoom_close": "Close enlarged view",
+    "zoom_dialog_named": "Enlarged view · {{name}}"
   },
   "price": {
     "per_bag": "/ bag",
@@ -66,30 +70,33 @@
       "summary": "A communal selection from the region. The photo shows dried natural-process cherries on the farm — aligned with traceable community lots."
     },
     "coffee_colombia_miel": {
-      "name": "Colombia · Red Honey · Castillo · 500 g",
-      "summary": "Per DE MI TIERRA bag: Red Honey process, Castillo variety, whole bean, medium roast; cup score ~87.25."
+      "name": "Colombia · Red Honey · Castillo",
+      "summary": "Spec sheet img_10: Castillo, red honey, whole bean, medium roast; score ~87.25. 500 g bag; panel also lists 440 g, 220 g, and 110 g formats."
     },
     "coffee_gesha_washed": {
-      "name": "Gesha · Gentle wash · 500 g",
-      "summary": "Front of bag: Gesha, Gentle Wash, whole bean, medium roast; score ~87. Coffee from Colombia."
+      "name": "Gesha · Gentle wash · 440 g",
+      "summary": "Spec sheet img_14: Gesha, gentle wash, whole bean, medium roast; 440 g bag. Coffee from Colombia."
     },
     "coffee_java_honey": {
       "name": "Castillo · Gentle wash · 125 g",
-      "summary": "Green bag: Castillo, Gentle Wash, 125 g, whole bean, medium roast; score ~85.75. Colombia origin."
+      "summary": "Spec sheet img_12: green bag, Castillo, Gentle Wash, 125 g, whole bean, medium roast; score ~85.75. Colombia origin."
     },
     "coffee_java_wild_natural": {
-      "name": "Natural · Castillo · 500 g",
-      "summary": "Blue bag: Natural process, Castillo, 500 g, whole bean, medium roast; score ~85.75. Coffee from Colombia."
+      "name": "Natural · Castillo · 440 g",
+      "summary": "Spec sheet img_11: Castillo, natural process, medium roast, whole bean; 440 g bag, score ~85.75. Coffee from Colombia."
     },
     "coffee_caramel_apple_java": {
       "name": "Premium Single Origin · medium roast",
       "summary": "Green Jay artwork on the bag: Premium Single Origin, whole bean, medium roast. Sweet, fruity line — confirm the exact lot when you order."
     },
     "coffee_caturra_esperanza": {
-      "name": "Caturra · Gentle wash · 250 g",
-      "summary": "Bag: Caturra, gentle wash, 250 g, whole bean, medium roast; score ~87.25. Coffee from Colombia."
+      "name": "Caturra · Gentle wash · 440 g",
+      "summary": "Spec sheet img_15: Caturra, gentle wash, whole bean, medium roast; score ~87.25. Commercial sizes 440 g, 220 g, and 110 g per panel."
     },
-    
+    "coffee_bourbon_rosado": {
+      "name": "Pink Bourbon · Gentle wash · 440 g",
+      "summary": "Spec sheet img_16: Pink Bourbon variety, gentle wash, medium roast; 440 g whole bean bag. Coffee from Colombia."
+    },
     "coffee_ethiopian_washed": {
       "name": "Ethiopian Washed",
       "summary": "Cup profile: floral and citrus highland notes. The bag shown is DE MI TIERRA Premium Single Origin (graphic reference); confirm availability on WhatsApp."
@@ -99,12 +106,12 @@
       "summary": "Full-flavored decaf. The image is the back of the bag (process story, contact +57 310 808 0400); we confirm the decaf SKU when you order."
     },
     "coffee_high_tea_gesha": {
-      "name": "Gesha · Gentle wash · 250 g",
-      "summary": "250 g bag: Gesha, gentle wash, whole bean, medium roast; score ~87.25. Smaller format in the Gesha line."
+      "name": "Gesha · Gentle wash (special line)",
+      "summary": "Same visual reference as washed Gesha (img_14): Geisha, gentle wash, medium roast; confirm format when you order."
     },
     "coffee_big_bag": {
-      "name": "Large coffee bag (5 lb)",
-      "summary": "Five pounds of fresh coffee — grind and details are confirmed when you order."
+      "name": "Red Honey · Castillo · large format",
+      "summary": "Spec sheet img_13: Castillo red honey, whole bean, medium roast; 500 g bag, score ~87.25. Ideal for high volume or sharing; exact volume we align on WhatsApp."
     },
     "membership_bronze": {
       "name": "Bronze Membership",
@@ -114,10 +121,13 @@
       "name": "Silver Membership",
       "summary": "Step-up tier with better per-bag value — more coffee, same core membership perks."
     },
-   
+    "membership_prepaid_year": {
+      "name": "Gift membership — prepaid 1 year",
+      "summary": "Give a full year paid upfront — plans and packaging depend on availability (reference image)."
+    },
     "membership_weekly_sub": {
       "name": "Weekly subscription — freshly roasted coffee",
-      "summary": "Weekly fresh-roast rhythm — selection and logistics we fine-tune with you."
+      "summary": "Weekly rhythm — image aligned with medium roast line and 440 / 220 / 110 g formats on spec sheet (img_7)."
     },
     "chocolate_70_dark": {
       "name": "Chocolate bar · 70% dark",

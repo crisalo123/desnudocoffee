@@ -7,6 +7,7 @@ import { useId, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useCart } from '@/presentation/hooks/useCart'
 import { useProductPriceLabel } from '@/presentation/hooks/useProductPriceLabel'
+import { ImageZoomLightbox } from '@/presentation/components/ImageZoomLightbox'
 
 interface ProductCardProps {
   product: Product
@@ -16,6 +17,7 @@ export function ProductCard({ product }: ProductCardProps) {
   const { t } = useTranslation()
   const { addProduct, lines } = useCart()
   const [detailsOpen, setDetailsOpen] = useState(false)
+  const [imageZoomOpen, setImageZoomOpen] = useState(false)
   const panelId = useId()
 
   const line = lines.find((l) => l.productId === product.id)
@@ -33,7 +35,7 @@ export function ProductCard({ product }: ProductCardProps) {
   return (
     <article className="group relative flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-b from-white/[0.07] to-transparent shadow-lg shadow-black/20 transition hover:border-denuded-gold/35 hover:shadow-denuded-gold/10">
       <div
-        className={`relative aspect-[5/4] overflow-hidden bg-stone-900/80 ${
+        className={`relative aspect-[5/4] overflow-hidden bg-stone-900/80 ring-0 transition-[box-shadow,ring] duration-300 group-hover:shadow-[inset_0_0_0_1px_rgba(201,169,98,0.22)] ${
           userAdjustedImg ? 'flex items-center justify-center p-2 sm:p-3' : ''
         }`}
       >
@@ -50,11 +52,37 @@ export function ProductCard({ product }: ProductCardProps) {
         />
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#0a0807]/90 via-transparent to-transparent opacity-90" />
         {product.featured ? (
-          <span className="absolute right-3 top-3 rounded-full border border-denuded-gold/40 bg-denuded-gold/10 px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-denuded-gold backdrop-blur-sm">
+          <span className="pointer-events-none absolute right-3 top-3 rounded-full border border-denuded-gold/40 bg-denuded-gold/10 px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-denuded-gold backdrop-blur-sm">
             {t('product.featured')}
           </span>
         ) : null}
+        <span
+          className="pointer-events-none absolute bottom-3 right-3 flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-black/35 text-denuded-gold/90 opacity-0 shadow-lg backdrop-blur-sm transition duration-300 group-hover:opacity-100"
+          aria-hidden
+        >
+          <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" aria-hidden>
+            <circle cx="10" cy="10" r="6.5" />
+            <path d="M15 15l5 5" strokeLinecap="round" />
+          </svg>
+        </span>
+        <button
+          type="button"
+          onClick={() => setImageZoomOpen(true)}
+          aria-haspopup="dialog"
+          aria-expanded={imageZoomOpen}
+          aria-label={t('product.zoom_open_named', { name: title })}
+          className="absolute inset-0 z-[1] cursor-zoom-in rounded-none border-0 bg-transparent p-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[-2px] focus-visible:outline-denuded-gold/70"
+        />
       </div>
+
+      <ImageZoomLightbox
+        open={imageZoomOpen}
+        onClose={() => setImageZoomOpen(false)}
+        src={imgSrc}
+        alt=""
+        dialogLabel={t('product.zoom_dialog_named', { name: title })}
+        closeLabel={t('product.zoom_close')}
+      />
 
       <div className="flex flex-1 flex-col p-5">
         <div className="mb-3 h-px w-12 bg-gradient-to-r from-denuded-gold to-transparent opacity-80" />
