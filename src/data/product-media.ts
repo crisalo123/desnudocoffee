@@ -1,21 +1,12 @@
 /**
- * Medios en `src/assets`. Hero: `img_10` (ficha Red Honey Castillo + panel técnico), completa en Hero.
+ * Medios en `src/assets`: solo `logo.jpeg`, `img_10`–`img_16`.
+ * Hero: `img_10` (ficha Red Honey Castillo + panel técnico).
  *
- * Catálogo: `img_11`–`img_16` y `img_1`–`img_9` según empaque. Cada URL como máximo **2** productos
- * (con 22 ítems y 17 archivos hay varias parejas; se evitan triples).
+ * Catálogo: cada producto usa una de esas fichas; como máximo **3** productos
+ * comparten la misma URL (22 ítems y 7 fichas + logo en merch).
  */
 import { CATALOG } from '@/data/catalog'
-import cafe from '@/assets/cafe.jpeg'
 import logo from '@/assets/logo.jpeg'
-import img1 from '@/assets/img_1.png'
-import img2 from '@/assets/img_2.png'
-import img3 from '@/assets/img_3.png'
-import img4 from '@/assets/img_4.png'
-import img5 from '@/assets/img_5.png'
-import img6 from '@/assets/img_6.png'
-import img7 from '@/assets/img_7.png'
-import img8 from '@/assets/img_8.jpeg'
-import img9 from '@/assets/img_9.png'
 import img10 from '@/assets/img_10.jpeg'
 import img11 from '@/assets/img_11.jpeg'
 import img12 from '@/assets/img_12.jpeg'
@@ -32,31 +23,31 @@ export const BRAND_LOGO_URL: string = logo
 export const HERO_POSTER_URL: string = img10
 
 const PRODUCT_IMAGE_LOCAL: Record<string, string> = {
-  coffee_community_lot: cafe,
+  coffee_community_lot: img11,
   coffee_colombia_miel: img10,
   coffee_gesha_washed: img14,
   coffee_java_honey: img12,
   coffee_java_wild_natural: img11,
-  coffee_caramel_apple_java: img1,
+  coffee_caramel_apple_java: img12,
   coffee_caturra_esperanza: img15,
   coffee_bourbon_rosado: img16,
-  coffee_ethiopian_washed: img4,
-  coffee_suenios_decaf: img3,
+  coffee_ethiopian_washed: img13,
+  coffee_suenios_decaf: img10,
   coffee_high_tea_gesha: img14,
   coffee_big_bag: img13,
-  membership_bronze: img2,
-  membership_silver: img9,
-  membership_prepaid_year: img8,
-  membership_weekly_sub: img7,
-  chocolate_70_dark: img5,
-  chocolate_50_milk: img6,
-  merch_hat: cafe,
-  merch_tote: img4,
-  merch_tshirt: img6,
-  merch_egift: img7,
+  membership_bronze: img15,
+  membership_silver: img16,
+  membership_prepaid_year: img10,
+  membership_weekly_sub: img11,
+  chocolate_70_dark: img12,
+  chocolate_50_milk: img13,
+  merch_hat: logo,
+  merch_tote: img14,
+  merch_tshirt: img16,
+  merch_egift: img15,
 }
 
-const DEFAULT_PRODUCT_FALLBACK = img2
+const DEFAULT_PRODUCT_FALLBACK = img10
 
 for (const p of CATALOG) {
   if (PRODUCT_IMAGE_LOCAL[p.id] === undefined) {
@@ -66,7 +57,7 @@ for (const p of CATALOG) {
   }
 }
 
-const MAX_USES_PER_PRODUCT_IMAGE = 2
+const MAX_USES_PER_PRODUCT_IMAGE = 3
 
 function assertMaxUsesPerUrl(): void {
   const counts = new Map<string, number>()
