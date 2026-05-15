@@ -2,6 +2,7 @@
   "brand": "DE MI TIERRA",
   "tagline": "Del campo a tu taza, con orgullo de nuestra tierra.",
   "nav": {
+    "main_label": "Secciones del sitio",
     "home": "Inicio",
     "about": "Nosotros",
     "explore": "Explorar",

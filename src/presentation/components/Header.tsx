@@ -14,6 +14,25 @@ export function Header({ onOpenCart }: HeaderProps) {
 
   const locale = (i18n.language.startsWith('es') ? 'es' : 'en') as AppLocale
 
+  const aboutIcon = (
+    <svg
+      className="h-3.5 w-3.5 shrink-0 opacity-80 sm:h-4 sm:w-4"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.75"
+      aria-hidden
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
+      />
+      <circle cx="9" cy="7" r="4" />
+      <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+    </svg>
+  )
+
   return (
     <header className="sticky top-0 z-40 border-b border-white/10 bg-[#0a0807]/80 backdrop-blur-xl">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4 sm:px-6">
@@ -42,18 +61,44 @@ export function Header({ onOpenCart }: HeaderProps) {
         </Link>
 
         <div className="flex min-w-0 flex-1 items-center justify-end gap-2 sm:gap-3">
+          <nav
+            aria-label={t('nav.main_label')}
+            className="hidden shrink-0 sm:block"
+          >
+            <div className="flex rounded-full border border-white/15 bg-white/5 p-0.5 shadow-inner shadow-black/20">
+              <NavLink
+                to="/about"
+                className={({ isActive }) =>
+                  `inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-medium transition sm:px-4 sm:text-sm ${
+                    isActive
+                      ? 'bg-white/15 font-display text-denuded-parchment ring-1 ring-denuded-gold/35'
+                      : 'font-display text-stone-400 hover:bg-white/[0.07] hover:text-denuded-parchment'
+                  }`
+                }
+              >
+                {aboutIcon}
+                {t('nav.about')}
+              </NavLink>
+            </div>
+          </nav>
+
           <NavLink
             to="/about"
             className={({ isActive }) =>
-              `shrink-0 rounded-full px-3 py-1.5 text-xs font-medium transition sm:px-4 sm:text-sm ${
+              `sm:hidden shrink-0 rounded-full border border-white/15 bg-white/5 px-3 py-1.5 text-xs font-medium shadow-inner shadow-black/20 transition ${
                 isActive
-                  ? 'border border-denuded-gold/40 bg-denuded-gold/15 text-denuded-parchment'
-                  : 'border border-transparent text-stone-500 hover:border-white/10 hover:bg-white/5 hover:text-stone-300'
+                  ? 'bg-white/15 font-display text-denuded-parchment ring-1 ring-denuded-gold/35'
+                  : 'font-display text-stone-400 hover:bg-white/[0.07] hover:text-denuded-parchment'
               }`
             }
+            aria-label={t('nav.about')}
           >
-            {t('nav.about')}
+            <span className="inline-flex items-center gap-1.5">
+              {aboutIcon}
+              <span className="max-w-22 truncate">{t('nav.about')}</span>
+            </span>
           </NavLink>
+
           <div className="flex rounded-full border border-white/15 bg-white/5 p-0.5">
             <button
               type="button"

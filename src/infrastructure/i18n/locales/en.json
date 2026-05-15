@@ -2,6 +2,7 @@
   "brand": "DE MI TIERRA",
   "tagline": "From our land to your cup.",
   "nav": {
+    "main_label": "Site sections",
     "home": "Home",
     "about": "About",
     "explore": "Explore",
