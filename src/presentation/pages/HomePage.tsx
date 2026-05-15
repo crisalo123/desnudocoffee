@@ -1,4 +1,5 @@
-import { useCallback, useRef, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
+import { useLocation } from 'react-router-dom'
 import { CartDrawer } from '@/presentation/components/CartDrawer'
 import { ScrollAmbience } from '@/presentation/components/ScrollAmbience'
 import { Footer } from '@/presentation/components/Footer'
@@ -10,11 +11,21 @@ import { useWhatsAppOrder } from '@/presentation/hooks/useWhatsAppOrder'
 export function HomePage() {
   const [cartOpen, setCartOpen] = useState(false)
   const catalogRef = useRef<HTMLElement | null>(null)
+  const location = useLocation()
   const { openOrder } = useWhatsAppOrder()
 
   const scrollToCatalog = useCallback(() => {
     catalogRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }, [])
+
+  useEffect(() => {
+    const state = location.state as { scrollTo?: string } | undefined
+    if (state?.scrollTo !== 'catalog') return
+    const id = window.requestAnimationFrame(() => {
+      catalogRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    })
+    return () => window.cancelAnimationFrame(id)
+  }, [location.state, location.key])
 
   const handleHeroWhatsApp = useCallback(() => {
     openOrder()
@@ -35,7 +46,8 @@ export function HomePage() {
         <main ref={catalogRef} id="catalog">
           <ProductSection category="coffee" />
           <ProductSection category="membership" />
-    
+          <ProductSection category="chocolate" />
+          <ProductSection category="merch" />
         </main>
 
         <Footer />

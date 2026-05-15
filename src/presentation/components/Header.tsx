@@ -1,6 +1,7 @@
 import { BRAND_LOGO_URL } from '@/data/product-media'
 import { setLocale, type AppLocale } from '@/infrastructure/i18n/i18n.config'
 import { useTranslation } from 'react-i18next'
+import { Link, NavLink } from 'react-router-dom'
 import { useCart } from '@/presentation/hooks/useCart'
 
 interface HeaderProps {
@@ -16,7 +17,11 @@ export function Header({ onOpenCart }: HeaderProps) {
   return (
     <header className="sticky top-0 z-40 border-b border-white/10 bg-[#0a0807]/80 backdrop-blur-xl">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4 sm:px-6">
-        <a href="#" className="group flex min-w-0 items-center gap-3 text-left sm:gap-4">
+        <Link
+          to="/"
+          className="group flex min-w-0 items-center gap-3 text-left sm:gap-4"
+          aria-label={t('nav.home')}
+        >
           <span className="relative flex shrink-0 items-center justify-center rounded-xl bg-[#0a0807] p-1 shadow-[0_0_0_1px_rgba(255,255,255,0.06)] sm:p-1.5">
             <img
               src={BRAND_LOGO_URL}
@@ -34,9 +39,21 @@ export function Header({ onOpenCart }: HeaderProps) {
               {t('tagline')}
             </span>
           </div>
-        </a>
+        </Link>
 
-        <div className="flex items-center gap-2 sm:gap-3">
+        <div className="flex min-w-0 flex-1 items-center justify-end gap-2 sm:gap-3">
+          <NavLink
+            to="/about"
+            className={({ isActive }) =>
+              `shrink-0 rounded-full px-3 py-1.5 text-xs font-medium transition sm:px-4 sm:text-sm ${
+                isActive
+                  ? 'border border-denuded-gold/40 bg-denuded-gold/15 text-denuded-parchment'
+                  : 'border border-transparent text-stone-500 hover:border-white/10 hover:bg-white/5 hover:text-stone-300'
+              }`
+            }
+          >
+            {t('nav.about')}
+          </NavLink>
           <div className="flex rounded-full border border-white/15 bg-white/5 p-0.5">
             <button
               type="button"

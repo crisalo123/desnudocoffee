@@ -2,6 +2,8 @@
   "brand": "DE MI TIERRA",
   "tagline": "From our land to your cup.",
   "nav": {
+    "home": "Home",
+    "about": "About",
     "explore": "Explore",
     "contact": "Order on WhatsApp",
     "cart": "Cart",
@@ -63,6 +65,28 @@
   },
   "locations": {
     "body": "Hours, shipping, and locations — we'll confirm the details with you on WhatsApp."
+  },
+  "about": {
+    "title": "Who we are",
+    "hero_eyebrow": "Origin · Direct relationship · Living catalog",
+    "hero_lead": "Here's the story behind what you already see on the site: Colombian microlots (honey, natural, gentle wash), varieties like Castillo, Gesha, Caturra, and pink Bourbon, Sueños decaf, a washed Ethiopian in our Premium line, Bronze and Silver memberships, weekly subscription or a prepaid gift year, a large bag for high volume, two chocolate bars, and merch to round out the ritual. No web checkout — we finalize everything with you on WhatsApp.",
+    "who_title": "Our essence",
+    "who_body": "DE MI TIERRA is rooted in Colombian coffee and in telling what's in each bag: process, variety, medium roast, and pack sizes you can verify in the catalog cards. We're not a copy of another brand: we're inspired by specialty-coffee best practices (farm story, membership, rotating lots), but the voice, products, and service are our own.",
+    "mission_title": "Mission",
+    "mission_body": "Give you a straight catalog — Community Lot, Colombia Honey, Java honey and natural, Gesha and High Tea Gesha, Caturra and pink Bourbon, Premium Single Origin, washed Ethiopian, Sueños decaf, big bag — with indicative pricing and a human close on WhatsApp so you order with clarity.",
+    "vision_title": "Vision",
+    "vision_body": "Become your trusted place to explore different profiles (from a versatile communal lot to a special Gesha) and sustain the habit through memberships, subscription, or a prepaid gift — always with freshness and transparency in what we offer.",
+    "quality_title": "Quality & product",
+    "quality_intro": "We show quality in what's already on the site: cards aligned to packaging and spec sheets where it applies, images you can enlarge, and clear categories (coffee, membership, chocolate, merch). Every item has a name and summary so you know what to ask about before you message us.",
+    "pillars_title": "How we work",
+    "pillar1_title": "Origin & process",
+    "pillar1_body": "We prioritize Colombia across most lots and leave room for complementary profiles (washed Ethiopian) and the ritual with chocolate or accessories — exactly how the catalog is built.",
+    "pillar2_title": "Membership & rhythm",
+    "pillar2_body": "Bronze, Silver, weekly subscription, or a one-year gift membership: built for people who want recurring coffee without losing flexibility on bag choice or cadence.",
+    "pillar3_title": "Direct service",
+    "pillar3_body": "No integrated payment cart: you build the inquiry in the in-app cart and send it via WhatsApp, where we fine-tune grind, quantities, and logistics.",
+    "cta_catalog": "See offerings",
+    "cta_whatsapp": "Chat on WhatsApp"
   },
   "products": {
     "coffee_community_lot": {

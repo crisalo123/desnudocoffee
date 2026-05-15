@@ -2,6 +2,8 @@
   "brand": "DE MI TIERRA",
   "tagline": "Del campo a tu taza, con orgullo de nuestra tierra.",
   "nav": {
+    "home": "Inicio",
+    "about": "Nosotros",
     "explore": "Explorar",
     "contact": "Pedir por WhatsApp",
     "cart": "Carrito",
@@ -63,6 +65,28 @@
   },
   "locations": {
     "body": "Horarios, envíos y ubicaciones los confirmamos contigo por WhatsApp."
+  },
+  "about": {
+    "title": "Quiénes somos",
+    "hero_eyebrow": "Origen · Trato directo · Catálogo vivo",
+    "hero_lead": "Aquí resume lo que ya ves en la vitrina: microlotes de Colombia (miel, natural, lavados suaves), variedades como Castillo, Gesha, Caturra y Bourbon rosado, descafeinado Sueños, un origen etíope en lavado, membresías Bronze y Silver, suscripción semanal o año de regalo, bolsa grande para alto consumo, chocolate en dos intensidades y merch para acompañar el ritual. Sin checkout web: todo lo cerramos contigo por WhatsApp.",
+    "who_title": "Nuestra esencia",
+    "who_body": "DE MI TIERRA nace del orgullo por el café colombiano y por contar la historia detrás de cada bolsa: proceso, variedad, tueste medio y presentaciones que puedes validar en las fichas del catálogo. No somos un clon de otra marca: tomamos como referencia las mejores prácticas del café de especialidad (historia de finca, membresía, rotación de lotes), pero la voz, los productos y el trato son propios de este proyecto.",
+    "mission_title": "Misión",
+    "mission_body": "Ponerte frente a un catálogo honesto — Community Lot, Colombia Miel, Java en honey y natural, Gesha y High Tea Gesha, Caturra y Bourbon rosado, Premium Single Origin, etíope lavado, decaf Sueños, bolsa grande — con precios orientativos y cierre humano por WhatsApp para que pidas con claridad.",
+    "vision_title": "Visión",
+    "vision_body": "Ser tu punto de confianza para explorar perfiles distintos (de un comunal versátil a un gesha especial) y sostener el hábito con membresías, suscripción o regalo prepagado, siempre con frescura y transparencia en lo que ofrecemos.",
+    "quality_title": "Calidad y producto",
+    "quality_intro": "La calidad la expresamos en hechos que ya están en el sitio: fichas alineadas a empaque y panel técnico cuando aplica, imágenes que puedes ampliar, y categorías claras (café, membresía, chocolate, merch). Cada ítem tiene nombre y resumen para que sepas qué consultas antes de escribirnos.",
+    "pillars_title": "Cómo lo hacemos",
+    "pillar1_title": "Origen y proceso",
+    "pillar1_body": "Priorizamos Colombia en la mayoría de los lotes y dejamos hueco a perfiles complementarios (etíope lavado) y al ritual con chocolate o accesorios — tal como está montado el catálogo.",
+    "pillar2_title": "Membresía y ritmo",
+    "pillar2_body": "Bronze, Silver, suscripción semanal o membresía regalo de un año: pensadas para quien quiere café recurrente sin perder flexibilidad al elegir bolsa o frecuencia.",
+    "pillar3_title": "Trato directo",
+    "pillar3_body": "Sin carrito de pago integrado: armamos el pedido en el carrito interno y lo enviamos por WhatsApp, donde afinamos molido, cantidades y logística.",
+    "cta_catalog": "Ver oferta",
+    "cta_whatsapp": "Escribir por WhatsApp"
   },
   "products": {
     "coffee_community_lot": {

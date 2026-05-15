@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next'
+import { Link } from 'react-router-dom'
 
 export function Footer() {
   const { t } = useTranslation()
@@ -18,12 +19,26 @@ export function Footer() {
             <p className="mt-3 max-w-md text-sm leading-relaxed text-stone-500">
               {t('footer.rights', { year })}
             </p>
+            <nav className="mt-6 flex flex-wrap gap-x-5 gap-y-2 text-sm">
+              <Link
+                to="/"
+                className="font-medium text-denuded-gold/90 hover:text-denuded-parchment"
+              >
+                {t('nav.home')}
+              </Link>
+              <Link
+                to="/about"
+                className="font-medium text-denuded-gold/90 hover:text-denuded-parchment"
+              >
+                {t('nav.about')}
+              </Link>
+            </nav>
             {instagramUrl ? (
               <a
                 href={instagramUrl}
                 target="_blank"
                 rel="noreferrer noopener"
-                className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-denuded-gold hover:text-denuded-parchment"
+                className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-denuded-gold hover:text-denuded-parchment"
               >
                 {t('footer.instagram')}
                 <span aria-hidden>↗</span>
