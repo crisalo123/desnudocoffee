@@ -50,7 +50,7 @@ export function Header({ onOpenCart }: HeaderProps) {
               className="h-14 w-auto max-h-18 max-w-44 object-contain object-left transform-gpu sm:h-19 sm:max-h-20 sm:max-w-52 md:h-20 md:max-w-60"
             />
           </span>
-          <div className="flex min-w-0 flex-col border-l border-white/10 pl-3 sm:pl-4">
+          <div className="hidden min-w-0 flex-col border-l border-white/10 pl-3 sm:flex sm:pl-4">
             <span className="font-display text-lg tracking-tight text-denuded-parchment transition group-hover:text-denuded-gold sm:text-xl">
               {t('brand')}
             </span>
