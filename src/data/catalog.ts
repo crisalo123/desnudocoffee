@@ -22,22 +22,6 @@ export const CATALOG: readonly Product[] = [
     category: 'coffee',
   },
   {
-    id: 'coffee_java_wild_natural',
-    category: 'coffee',
-  },
-  {
-    id: 'coffee_caramel_apple_java',
-    category: 'coffee',
-  },
-  {
-    id: 'coffee_caturra_esperanza',
-    category: 'coffee',
-  },
-  {
-    id: 'coffee_bourbon_rosado',
-    category: 'coffee',
-  },
-  {
     id: 'coffee_ethiopian_washed',
     category: 'coffee',
   },
@@ -45,10 +29,6 @@ export const CATALOG: readonly Product[] = [
     id: 'coffee_suenios_decaf',
     category: 'coffee',
     featured: true,
-  },
-  {
-    id: 'coffee_high_tea_gesha',
-    category: 'coffee',
   },
   {
     id: 'coffee_big_bag',
@@ -62,40 +42,6 @@ export const CATALOG: readonly Product[] = [
   {
     id: 'membership_silver',
     category: 'membership',
-    featured: true,
-  },
-  {
-    id: 'membership_prepaid_year',
-    category: 'membership',
-  },
-  {
-    id: 'membership_weekly_sub',
-    category: 'membership',
-    featured: true,
-  },
-  {
-    id: 'chocolate_70_dark',
-    category: 'chocolate',
-  },
-  {
-    id: 'chocolate_50_milk',
-    category: 'chocolate',
-  },
-  {
-    id: 'merch_hat',
-    category: 'merch',
-  },
-  {
-    id: 'merch_tote',
-    category: 'merch',
-  },
-  {
-    id: 'merch_tshirt',
-    category: 'merch',
-  },
-  {
-    id: 'merch_egift',
-    category: 'merch',
     featured: true,
   },
 ] as const

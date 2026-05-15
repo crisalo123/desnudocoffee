@@ -1,9 +1,10 @@
 /**
- * Medios en `src/assets`: solo `logo.jpeg`, `img_10`–`img_16`.
- * Hero: `img_10` (ficha Red Honey Castillo + panel técnico).
+ * Medios en `src/assets`: `logo.jpeg` (marca) y `img_10`–`img_16`.
+ * Hero: `img_10`.
  *
- * Catálogo: cada producto usa una de esas fichas; como máximo **3** productos
- * comparten la misma URL (22 ítems y 7 fichas + logo en merch).
+ * Cafés: solo **img_10** e **img_11** comparten dos productos cada una; el resto
+ * de fichas (img_12–img_14) una sola vez por café. Membresías: **img_15** (Bronze)
+ * e **img_16** (Silver), sin logo en catálogo.
  */
 import { CATALOG } from '@/data/catalog'
 import logo from '@/assets/logo.jpeg'
@@ -19,32 +20,18 @@ const W = 900
 
 export const BRAND_LOGO_URL: string = logo
 
-/** Ficha comercial Red Honey / Castillo (`img_10`); misma línea visual que Colombia Miel en catálogo. */
 export const HERO_POSTER_URL: string = img10
 
 const PRODUCT_IMAGE_LOCAL: Record<string, string> = {
-  coffee_community_lot: img11,
   coffee_colombia_miel: img10,
-  coffee_gesha_washed: img14,
-  coffee_java_honey: img12,
-  coffee_java_wild_natural: img11,
-  coffee_caramel_apple_java: img12,
-  coffee_caturra_esperanza: img15,
-  coffee_bourbon_rosado: img16,
-  coffee_ethiopian_washed: img13,
   coffee_suenios_decaf: img10,
-  coffee_high_tea_gesha: img14,
+  coffee_community_lot: img11,
+  coffee_java_honey: img11,
+  coffee_gesha_washed: img14,
+  coffee_ethiopian_washed: img12,
   coffee_big_bag: img13,
   membership_bronze: img15,
   membership_silver: img16,
-  membership_prepaid_year: img10,
-  membership_weekly_sub: img11,
-  chocolate_70_dark: img12,
-  chocolate_50_milk: img13,
-  merch_hat: logo,
-  merch_tote: img14,
-  merch_tshirt: img16,
-  merch_egift: img15,
 }
 
 const DEFAULT_PRODUCT_FALLBACK = img10
@@ -57,23 +44,23 @@ for (const p of CATALOG) {
   }
 }
 
-const MAX_USES_PER_PRODUCT_IMAGE = 3
+const MAX_USES_PER_SPEC_SHEET = 2
 
-function assertMaxUsesPerUrl(): void {
+function assertMaxUsesPerSpecSheet(): void {
   const counts = new Map<string, number>()
   for (const url of Object.values(PRODUCT_IMAGE_LOCAL)) {
     counts.set(url, (counts.get(url) ?? 0) + 1)
   }
   for (const [url, n] of counts) {
-    if (n > MAX_USES_PER_PRODUCT_IMAGE) {
+    if (n > MAX_USES_PER_SPEC_SHEET) {
       throw new Error(
-        `[product-media] La imagen se usa ${n} veces (máx. ${MAX_USES_PER_PRODUCT_IMAGE}): ${url.slice(0, 80)}…`,
+        `[product-media] La ficha se usa ${n} veces (máx. ${MAX_USES_PER_SPEC_SHEET}): ${url.slice(0, 80)}…`,
       )
     }
   }
 }
 
-assertMaxUsesPerUrl()
+assertMaxUsesPerSpecSheet()
 
 export function getProductImageUrl(productId: string, _width = W): string {
   return PRODUCT_IMAGE_LOCAL[productId] ?? DEFAULT_PRODUCT_FALLBACK

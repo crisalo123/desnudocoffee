@@ -46,8 +46,6 @@ export function HomePage() {
         <main ref={catalogRef} id="catalog">
           <ProductSection category="coffee" />
           <ProductSection category="membership" />
-          <ProductSection category="chocolate" />
-          <ProductSection category="merch" />
         </main>
 
         <Footer />

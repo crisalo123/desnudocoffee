@@ -13,7 +13,7 @@
   "hero": {
     "eyebrow": "Colombia · Origin · Micro lots",
     "title": "Coffee with purpose, from our land to your table.",
-    "subtitle": "A simple showcase of microlots, memberships, and essentials. When you're ready, we take your order on WhatsApp.",
+    "subtitle": "A focused showcase of microlots plus Bronze and Silver memberships. When you're ready, we take your order on WhatsApp.",
     "cta_catalog": "See offerings",
     "cta_whatsapp": "Chat with us",
     "photo_credit": "Main image (img_10, Red Honey Castillo spec sheet) — full frame, no crop.",
@@ -26,9 +26,7 @@
   },
   "sections": {
     "coffee": "Coffees & microlots",
-    "membership": "Memberships",
-    "chocolate": "Chocolate",
-    "merch": "Merch & accessories"
+    "membership": "Memberships"
   },
   "product": {
     "add": "Add",
@@ -70,20 +68,20 @@
   "about": {
     "title": "Who we are",
     "hero_eyebrow": "Origin · Direct relationship · Living catalog",
-    "hero_lead": "Here's the story behind what you already see on the site: Colombian microlots (honey, natural, gentle wash), varieties like Castillo, Gesha, Caturra, and pink Bourbon, Sueños decaf, a washed Ethiopian in our Premium line, Bronze and Silver memberships, weekly subscription or a prepaid gift year, a large bag for high volume, two chocolate bars, and merch to round out the ritual. No web checkout — we finalize everything with you on WhatsApp.",
+    "hero_lead": "Here's what you see in the showcase: Colombian microlots (honey, natural, gentle wash), washed Gesha, Sueños decaf, a washed Ethiopian, a large-format bag for high volume, and Bronze and Silver memberships. No web checkout — we finalize everything with you on WhatsApp.",
     "who_title": "Our essence",
     "who_body": "DE MI TIERRA is rooted in Colombian coffee and in telling what's in each bag: process, variety, medium roast, and pack sizes you can verify in the catalog cards. We're not a copy of another brand: we're inspired by specialty-coffee best practices (farm story, membership, rotating lots), but the voice, products, and service are our own.",
     "mission_title": "Mission",
-    "mission_body": "Give you a straight catalog — Community Lot, Colombia Honey, Java honey and natural, Gesha and High Tea Gesha, Caturra and pink Bourbon, Premium Single Origin, washed Ethiopian, Sueños decaf, big bag — with indicative pricing and a human close on WhatsApp so you order with clarity.",
+    "mission_body": "Put an honest catalog in front of you — Community Lot, Colombia Honey, Java honey, washed Gesha, washed Ethiopian, Sueños decaf, large-format bag — with guide prices and a human WhatsApp close so you order with clarity.",
     "vision_title": "Vision",
-    "vision_body": "Become your trusted place to explore different profiles (from a versatile communal lot to a special Gesha) and sustain the habit through memberships, subscription, or a prepaid gift — always with freshness and transparency in what we offer.",
+    "vision_body": "Be the place you trust to explore different profiles (from a versatile community lot to a special Gesha) and keep the habit with Bronze or Silver memberships — always with freshness and transparency in what we offer.",
     "quality_title": "Quality & product",
-    "quality_intro": "We show quality in what's already on the site: cards aligned to packaging and spec sheets where it applies, images you can enlarge, and clear categories (coffee, membership, chocolate, merch). Every item has a name and summary so you know what to ask about before you message us.",
+    "quality_intro": "We show quality in what's already on the site: cards aligned to packaging and spec sheets where it applies, images you can enlarge, and clear categories (coffee and membership). Every item has a name and summary so you know what to ask about before you message us.",
     "pillars_title": "How we work",
     "pillar1_title": "Origin & process",
-    "pillar1_body": "We prioritize Colombia across most lots and leave room for complementary profiles (washed Ethiopian) and the ritual with chocolate or accessories — exactly how the catalog is built.",
+    "pillar1_body": "We prioritize Colombia across most lots and leave room for complementary profiles (washed Ethiopian) — exactly how the catalog is built.",
     "pillar2_title": "Membership & rhythm",
-    "pillar2_body": "Bronze, Silver, weekly subscription, or a one-year gift membership: built for people who want recurring coffee without losing flexibility on bag choice or cadence.",
+    "pillar2_body": "Bronze and Silver: built for people who want recurring coffee without losing flexibility on bag choice or cadence.",
     "pillar3_title": "Direct service",
     "pillar3_body": "No integrated payment cart: you build the inquiry in the in-app cart and send it via WhatsApp, where we fine-tune grind, quantities, and logistics.",
     "cta_catalog": "See offerings",
@@ -104,23 +102,7 @@
     },
     "coffee_java_honey": {
       "name": "Castillo · Gentle wash · 125 g",
-      "summary": "Spec sheet img_12: green bag, Castillo, Gentle Wash, 125 g, whole bean, medium roast; score ~85.75. Colombia origin."
-    },
-    "coffee_java_wild_natural": {
-      "name": "Natural · Castillo · 440 g",
-      "summary": "Spec sheet img_11: Castillo, natural process, medium roast, whole bean; 440 g bag, score ~85.75. Coffee from Colombia."
-    },
-    "coffee_caramel_apple_java": {
-      "name": "Premium Single Origin · medium roast",
-      "summary": "Green Jay artwork on the bag: Premium Single Origin, whole bean, medium roast. Sweet, fruity line — confirm the exact lot when you order."
-    },
-    "coffee_caturra_esperanza": {
-      "name": "Caturra · Gentle wash · 440 g",
-      "summary": "Spec sheet img_15: Caturra, gentle wash, whole bean, medium roast; score ~87.25. Commercial sizes 440 g, 220 g, and 110 g per panel."
-    },
-    "coffee_bourbon_rosado": {
-      "name": "Pink Bourbon · Gentle wash · 440 g",
-      "summary": "Spec sheet img_16: Pink Bourbon variety, gentle wash, medium roast; 440 g whole bean bag. Coffee from Colombia."
+      "summary": "Same showcase spec img_11 as the community lot (Castillo, whole bean, medium roast); 125 g Gentle Wash bag — confirm packaging when you order."
     },
     "coffee_ethiopian_washed": {
       "name": "Ethiopian Washed",
@@ -130,53 +112,17 @@
       "name": "Sueños DECAF",
       "summary": "Full-flavored decaf. The image is the back of the bag (process story, contact +57 310 808 0400); we confirm the decaf SKU when you order."
     },
-    "coffee_high_tea_gesha": {
-      "name": "Gesha · Gentle wash (special line)",
-      "summary": "Same visual reference as washed Gesha (img_14): Geisha, gentle wash, medium roast; confirm format when you order."
-    },
     "coffee_big_bag": {
       "name": "Red Honey · Castillo · large format",
       "summary": "Spec sheet img_13: Castillo red honey, whole bean, medium roast; 500 g bag, score ~87.25. Ideal for high volume or sharing; exact volume we align on WhatsApp."
     },
     "membership_bronze": {
       "name": "Bronze Membership",
-      "summary": "Recurring fresh bags — pick profile and grind; optional heads-up to choose each week's roast."
+      "summary": "Recurring fresh bags — pick profile and grind; optional heads-up to choose each week's roast. Spec sheet img_15."
     },
     "membership_silver": {
       "name": "Silver Membership",
-      "summary": "Step-up tier with better per-bag value — more coffee, same core membership perks."
-    },
-    "membership_prepaid_year": {
-      "name": "Gift membership — prepaid 1 year",
-      "summary": "Give a full year paid upfront — plans and packaging depend on availability (reference image)."
-    },
-    "membership_weekly_sub": {
-      "name": "Weekly subscription — freshly roasted coffee",
-      "summary": "Weekly rhythm — image aligned with medium roast line and 440 / 220 / 110 g formats on spec sheet (img_11)."
-    },
-    "chocolate_70_dark": {
-      "name": "Chocolate bar · 70% dark",
-      "summary": "70% dark bar — deep cocoa, minimal sugar; made to pair with afternoon espresso."
-    },
-    "chocolate_50_milk": {
-      "name": "Chocolate bar · 50% milk",
-      "summary": "50% milk chocolate — creamy, crowd-pleasing and easy to share."
-    },
-    "merch_hat": {
-      "name": "Hat",
-      "summary": "Branded headwear — everyday wear."
-    },
-    "merch_tote": {
-      "name": "Tote bag",
-      "summary": "Sturdy tote for beans, books or market runs — simple, practical design."
-    },
-    "merch_tshirt": {
-      "name": "T-shirt",
-      "summary": "Organic cotton pocket tees — soft daily wear with farm-inspired graphics."
-    },
-    "merch_egift": {
-      "name": "E-gift card",
-      "summary": "Digital gift card — amount and delivery are set at checkout."
+      "summary": "Step-up tier with better per-bag value — more coffee, same core membership perks. Spec sheet img_16."
     }
   }
 }

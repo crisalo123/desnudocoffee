@@ -13,7 +13,7 @@
   "hero": {
     "eyebrow": "Colombia · Origen · Microlotes",
     "title": "Café con propósito, de nuestra tierra a tu mesa.",
-    "subtitle": "Un escaparate simple con microlotes, membresías y productos esenciales. Cuando quieras comprar, cerramos por WhatsApp.",
+    "subtitle": "Un escaparate con microlotes y membresías Bronze y Silver. Cuando quieras comprar, cerramos por WhatsApp.",
     "cta_catalog": "Ver oferta",
     "cta_whatsapp": "Escríbenos",
     "photo_credit": "Imagen principal (img_10, ficha Red Honey Castillo) — completa, sin recorte.",
@@ -26,9 +26,7 @@
   },
   "sections": {
     "coffee": "Cafés y microlotes",
-    "membership": "Membresías",
-    "chocolate": "Chocolates",
-    "merch": "Merch y accesorios"
+    "membership": "Membresías"
   },
   "product": {
     "add": "Añadir",
@@ -70,20 +68,20 @@
   "about": {
     "title": "Quiénes somos",
     "hero_eyebrow": "Origen · Trato directo · Catálogo vivo",
-    "hero_lead": "Aquí resume lo que ya ves en la vitrina: microlotes de Colombia (miel, natural, lavados suaves), variedades como Castillo, Gesha, Caturra y Bourbon rosado, descafeinado Sueños, un origen etíope en lavado, membresías Bronze y Silver, suscripción semanal o año de regalo, bolsa grande para alto consumo, chocolate en dos intensidades y merch para acompañar el ritual. Sin checkout web: todo lo cerramos contigo por WhatsApp.",
+    "hero_lead": "Aquí resume lo que ves en la vitrina: microlotes de Colombia (miel, natural, lavados suaves), Gesha en lavado suave, decaf Sueños, un origen etíope en lavado, bolsa grande para alto consumo y membresías Bronze y Silver. Sin checkout web: todo lo cerramos contigo por WhatsApp.",
     "who_title": "Nuestra esencia",
     "who_body": "DE MI TIERRA nace del orgullo por el café colombiano y por contar la historia detrás de cada bolsa: proceso, variedad, tueste medio y presentaciones que puedes validar en las fichas del catálogo. No somos un clon de otra marca: tomamos como referencia las mejores prácticas del café de especialidad (historia de finca, membresía, rotación de lotes), pero la voz, los productos y el trato son propios de este proyecto.",
     "mission_title": "Misión",
-    "mission_body": "Ponerte frente a un catálogo honesto — Community Lot, Colombia Miel, Java en honey y natural, Gesha y High Tea Gesha, Caturra y Bourbon rosado, Premium Single Origin, etíope lavado, decaf Sueños, bolsa grande — con precios orientativos y cierre humano por WhatsApp para que pidas con claridad.",
+    "mission_body": "Ponerte frente a un catálogo honesto — Community Lot, Colombia Miel, Java en honey, Gesha lavado, etíope lavado, decaf Sueños, bolsa grande — con precios orientativos y cierre humano por WhatsApp para que pidas con claridad.",
     "vision_title": "Visión",
-    "vision_body": "Ser tu punto de confianza para explorar perfiles distintos (de un comunal versátil a un gesha especial) y sostener el hábito con membresías, suscripción o regalo prepagado, siempre con frescura y transparencia en lo que ofrecemos.",
+    "vision_body": "Ser tu punto de confianza para explorar perfiles distintos (de un comunal versátil a un gesha especial) y sostener el hábito con membresías Bronze o Silver, siempre con frescura y transparencia en lo que ofrecemos.",
     "quality_title": "Calidad y producto",
-    "quality_intro": "La calidad la expresamos en hechos que ya están en el sitio: fichas alineadas a empaque y panel técnico cuando aplica, imágenes que puedes ampliar, y categorías claras (café, membresía, chocolate, merch). Cada ítem tiene nombre y resumen para que sepas qué consultas antes de escribirnos.",
+    "quality_intro": "La calidad la expresamos en hechos que ya están en el sitio: fichas alineadas a empaque y panel técnico cuando aplica, imágenes que puedes ampliar, y categorías claras (café y membresía). Cada ítem tiene nombre y resumen para que sepas qué consultas antes de escribirnos.",
     "pillars_title": "Cómo lo hacemos",
     "pillar1_title": "Origen y proceso",
-    "pillar1_body": "Priorizamos Colombia en la mayoría de los lotes y dejamos hueco a perfiles complementarios (etíope lavado) y al ritual con chocolate o accesorios — tal como está montado el catálogo.",
+    "pillar1_body": "Priorizamos Colombia en la mayoría de los lotes y dejamos hueco a perfiles complementarios (etíope lavado) — tal como está montado el catálogo.",
     "pillar2_title": "Membresía y ritmo",
-    "pillar2_body": "Bronze, Silver, suscripción semanal o membresía regalo de un año: pensadas para quien quiere café recurrente sin perder flexibilidad al elegir bolsa o frecuencia.",
+    "pillar2_body": "Bronze y Silver: pensadas para quien quiere café recurrente sin perder flexibilidad al elegir bolsa o frecuencia.",
     "pillar3_title": "Trato directo",
     "pillar3_body": "Sin carrito de pago integrado: armamos el pedido en el carrito interno y lo enviamos por WhatsApp, donde afinamos molido, cantidades y logística.",
     "cta_catalog": "Ver oferta",
@@ -104,23 +102,7 @@
     },
     "coffee_java_honey": {
       "name": "Castillo · Lavado suave · 125 g",
-      "summary": "Ficha img_12: empaque verde, Castillo, Gentle Wash, 125 g, en grano, tueste medio; puntuación ~85,75. Origen Colombia."
-    },
-    "coffee_java_wild_natural": {
-      "name": "Natural · Castillo · 440 g",
-      "summary": "Ficha img_11: Castillo, beneficio natural, tueste medio, grano; bolsa 440 g y puntuación ~85,75. Café de Colombia."
-    },
-    "coffee_caramel_apple_java": {
-      "name": "Premium Single Origin · tueste medio",
-      "summary": "Línea gráfica Green Jay en empaque: Premium Single Origin, en grano, tueste medio. Perfil dulce y frutal; confirma lote al pedir."
-    },
-    "coffee_caturra_esperanza": {
-      "name": "Caturra · Gentle wash · 440 g",
-      "summary": "Ficha img_15: Caturra, suave lavado, grano, tueste medio; puntuación ~87,25. Presentaciones comerciales 440 g, 220 g y 110 g (según panel)."
-    },
-    "coffee_bourbon_rosado": {
-      "name": "Bourbon rosado · Gentle wash · 440 g",
-      "summary": "Ficha img_16: variedad Bourbon rosado, beneficio suave lavado, tueste medio; bolsa 440 g en grano. Café de Colombia."
+      "summary": "Misma ficha visual img_11 que el lote comunal en vitrina (Castillo, grano, tueste medio); empaque 125 g Gentle Wash — confirma presentación al pedir."
     },
     "coffee_ethiopian_washed": {
       "name": "Etíope lavado",
@@ -130,53 +112,17 @@
       "name": "Sueños DECAF (descafeinado)",
       "summary": "Descafeinado con buen cuerpo. La imagen muestra el reverso del empaque (historia de proceso, contacto +57 310 808 0400); el producto descafeinado lo confirmamos por WhatsApp."
     },
-    "coffee_high_tea_gesha": {
-      "name": "Gesha · Gentle wash (línea especial)",
-      "summary": "Misma referencia visual que el Gesha lavado (img_14): Geisha, suave lavado, tueste medio; confirma formato al pedir."
-    },
     "coffee_big_bag": {
       "name": "Red Honey · Castillo · formato grande",
       "summary": "Ficha img_13: Castillo red honey en grano, tueste medio; bolsa 500 g, puntuación ~87,25. Ideal para consumo alto o compartir; volumen exacto lo acordamos por WhatsApp."
     },
     "membership_bronze": {
       "name": "Membresía Bronze",
-      "summary": "Bolsas recurrentes — eliges perfil y molido; opción de avisos para escoger cada tueste."
+      "summary": "Bolsas recurrentes — eliges perfil y molido; opción de avisos para escoger cada tueste. Imagen de ficha img_15."
     },
     "membership_silver": {
       "name": "Membresía Silver",
-      "summary": "Nivel superior con mejor precio por bolsa — más café, mismos beneficios habituales de membresía."
-    },
-    "membership_prepaid_year": {
-      "name": "Membresía regalo prepagada 1 año",
-      "summary": "Regala un año pagado por adelantado — planes y presentaciones según disponibilidad (imagen referencial)."
-    },
-    "membership_weekly_sub": {
-      "name": "Suscripción semanal de café recién tostado",
-      "summary": "Ritmo semanal — imagen alineada con línea de tueste medio y presentaciones 440 / 220 / 110 g en ficha (img_11)."
-    },
-    "chocolate_70_dark": {
-      "name": "Barra de chocolate · 70% oscuro",
-      "summary": "Barra 70% — cacao profundo, poco azúcar; compañera del espresso de tarde."
-    },
-    "chocolate_50_milk": {
-      "name": "Barra de chocolate · 50% leche",
-      "summary": "Chocolate con leche 50% — cremoso, fácil de compartir."
-    },
-    "merch_hat": {
-      "name": "Gorra",
-      "summary": "Gorra con identidad de marca — para el día a día."
-    },
-    "merch_tote": {
-      "name": "Tote bag",
-      "summary": "Tote resistente para grano, libros o mercado — diseño sencillo y práctico."
-    },
-    "merch_tshirt": {
-      "name": "Camiseta",
-      "summary": "Camisetas de algodón orgánico con bolsillo — suaves, con gráficos inspirados en la finca."
-    },
-    "merch_egift": {
-      "name": "Tarjeta regalo electrónica",
-      "summary": "Tarjeta digital — el monto y la entrega se definen al completar la compra."
+      "summary": "Nivel superior con mejor precio por bolsa — más café, mismos beneficios habituales de membresía. Imagen de ficha img_16."
     }
   }
 }

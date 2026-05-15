@@ -1,8 +1,4 @@
-export type ProductCategory =
-  | 'coffee'
-  | 'membership'
-  | 'chocolate'
-  | 'merch'
+export type ProductCategory = 'coffee' | 'membership'
 
 export interface Product {
   readonly id: string

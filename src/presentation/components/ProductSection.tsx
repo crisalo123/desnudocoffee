@@ -6,8 +6,6 @@ import { ProductCard } from '@/presentation/components/ProductCard'
 const SECTION_IDS: Record<ProductCategory, string> = {
   coffee: 'catalog-coffee',
   membership: 'catalog-membership',
-  chocolate: 'catalog-chocolate',
-  merch: 'catalog-merch',
 }
 
 interface ProductSectionProps {
